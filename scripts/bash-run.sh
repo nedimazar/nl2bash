@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ARGS=${@:1}
-
+export PYTHONPATH=$PYTHONPATH:/content/gdrive/Othercomputers/My\ MacBook\ Pro/nl2bash
 python3 -m encoder_decoder.translate \
     --rnn_cell gru \
     --encoder_topology birnn \

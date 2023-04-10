@@ -10,11 +10,13 @@ data:
 	# Filter raw parallel corpus and split to train/dev/test 
 	cd ../data/scripts && \
 	python3 filter_data.py bash && \
+	echo Filtering Done  &&\
 	python3 split_data.py bash && \
-	cd ../../scripts
-	
-	# Convert raw parallel corpus to features taken by the neural network
-	./bash-run.sh --process_data --dataset bash
+	echo Splitting Done  &&\
+	cd ../../scripts &&\
+	# Convert raw parallel corpus to features taken by the neural network &&\
+	./bash-run.sh --process_data --dataset bash &&\
+	echo Processing Done
 	
 decode:
 	# Decode candidate outputs of the baseline systems given the pretrained models (on the dev set)
