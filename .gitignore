@@ -1,3 +1,7 @@
+# Google Drive
+/.tmp.drivedownload
+/.tmp.driveupload
+
 # LaTeX junk
 *.aux
 *.log
