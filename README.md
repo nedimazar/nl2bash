@@ -2,7 +2,14 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+
+
 ## Overview
+This fork of the  NL2Bash repository was used to recreate the results from the original paper on the DAS-5 cluster for Nedim Azar's master's thesis.
+
+* The `train_models.sh` script can be modified to run the models on DAS-5.
+* The `evalueate.sh` script can be used to calculate performance metrics on
+* The `fine_tuned_model_outputs` directory contains outputs of fine-tuned GPT-3 models for evaluation on this task. `Babbage` and `Curie` outperdorm the previously presented models.
 
 This repository contains the data and source code release of the paper: [NL2Bash: A Corpus and Semantic Parser for
 Natural Language Interface to the Linux Operating System](http://victorialin.net/pubs/nl2bash.pdf).

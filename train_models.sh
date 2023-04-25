@@ -7,7 +7,7 @@
 #SBATCH --partition=defq
 #SBATCH -C TitanX-Pascal
 #SBATCH --gres=gpu:1
-#SBATCH --output=build-ada_eval.out
+#SBATCH --output=build-train.out
 
 # Wiping the log file
 > build-train.out
@@ -19,12 +19,22 @@ source ~/.bashrc
 # Do not ask why
 conda activate apple
 
-# Getting CUDA
+# TODO: Remove as needed
 module load cuda11.0/toolkit/11.0.3
 module load cuDNN/cuda11.0/8.0.5
 
+# TODO: Setting up the working dir and python path, modifying as needed
+cd /var/scratch/nar720/new/nl2bas
 export PYTHONPATH=$PYTHONPATH:/var/scratch/nar720/new/nl2bash
 
+# Installing Dependencies
+make
+
+# The meat and potatoes are here
 cd /var/scratch/nar720/new/nl2bash/scripts
 
-./bash-run.sh --data bash --prediction_file /var/scratch/nar720/new/nl2bash/fine_tuned_model_outputs/ada.output --eval --test
+# Data filtering, split, and preprocessing
+make data
+
+# Training models
+make train
