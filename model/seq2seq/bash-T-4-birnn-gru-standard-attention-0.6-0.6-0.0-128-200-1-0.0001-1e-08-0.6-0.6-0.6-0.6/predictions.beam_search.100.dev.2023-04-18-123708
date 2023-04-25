@@ -1,0 +1,701 @@
+b'find __SP__UNK -type d -exec chmod __SP__UNK {} \\;'|||b'find __SP__UNK -type d -print0 | xargs -0 -I {} chmod __SP__UNK {}'|||b'find __SP__UNK -type d -exec chmod +x {} \\;'|||
+b'nl -s - -b a -n __SP__UNK'|||b'nl -s - -b a -n ln __SP__UNK | nl'|||b'nl -s - -b a -n ln __SP__UNK | split -l __SP__UNK - __SP__UNK'|||
+b''|||b'find __SP__UNK -type f -mtime __SP__UNK -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||b'find . -type f -mtime 1 -print0 | xargs -0 -I {} tar -c -z -v -f __SP__UNK {}'|||
+b'yes | mv ...'|||b'yes | head -n 10 | xargs -I {} mv {} __SP__UNK'|||b'yes | mv | xargs -I {} mv {} __SP__UNK'|||
+b'cat file | xargs -n 1 -I {} cp fileName.txt {}'|||b'cat file | xargs -n 1 -I {} cp -t __SP__UNK {}'|||b'cat file | xargs -n 1 -I {} cp __SP__UNK {}'|||
+b''|||b'find . -type f -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||b'find . -type f -exec grep __SP__UNK {} \\; -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||
+b'rsync -a --stats --delete __SP__UNK __SP__UNK'|||b'rsync -a -v --delete __SP__UNK __SP__UNK'|||b'rsync -a --stats --progress --delete __SP__UNK __SP__UNK'|||
+b'rsync -a -v --files-from=__SP__UNK __SP__UNK'|||b'rsync -a -v -z __SP__UNK __SP__UNK'|||b'rsync -a -v --files-from=--rsync-path __SP__UNK __SP__UNK __SP__UNK'|||
+b'rsync -a -v -z __SP__UNK __SP__UNK'|||b'rsync -a -v -h __SP__UNK __SP__UNK'|||b'rsync -a -v -R __SP__UNK __SP__UNK'|||
+b''|||b'find . -maxdepth 1 -name __SP__UNK -print0 | xargs -0 -I {} tar -r -v -f __SP__UNK {}'|||b"find . -name '*' | xargs -I {} tar -c -v -f __SP__UNK {}"|||
+b''|||b'rsync -a -v --exclude=__SP__UNK __SP__UNK __SP__UNK'|||b'rsync -a -v --exclude=__SP__UNK --exclude=__SP__UNK __SP__UNK __SP__UNK'|||
+b'rsync -a -v /path/to/files __SP__UNK'|||b'rsync -a -v -z __SP__UNK __SP__UNK'|||b'rsync -a -v --rsync-path=__SP__UNK /path/to/files __SP__UNK'|||
+b''|||b'find . -name .snapshot -prune -or \\( -name __SP__UNK -or -name __SP__UNK \\) -prune -or -name __SP__UNK -prune -or -print'|||b"find . \\( -name a.out -or -name '*.o' -or -name 'core' \\) -exec tar -r -v -f __SP__UNK {} \\;"|||
+b''|||b'find __SP__UNK -mtime -1 -exec du -h {} \\;'|||b'find __SP__UNK -mtime -1 -print0 | xargs -0 -I {} du -c {} | tail -n 1'|||
+b''|||b''|||b'echo "$line" | md5sum | cut -d \' \' -f 1 | cut -d \' \' -f 1 | cut -d \' \' -f 1'|||
+b''|||b"cat __SP__UNK | md5sum | cut -d ' ' -f 1 | sort | uniq | xargs -I {} md5sum {}"|||b"cat __SP__UNK | md5sum | cut -d ' ' -f 1 | xargs -I {} md5sum {}"|||
+b"md5sum __SP__UNK | cut -d ' ' -f 1 | sort | uniq | xargs -I {} tar -c -v -f __SP__UNK {}"|||b'diff -q -r __SP__UNK __SP__UNK | sort | uniq -c'|||b'diff -a -r -q __SP__UNK __SP__UNK | xargs -I {} tar -c -v -f __SP__UNK {}'|||
+b'echo __SP__UNK | md5sum'|||b'echo -n __SP__UNK | md5sum'|||b'md5sum __SP__UNK'|||
+b'md5sum __SP__UNK'|||b'md5sum $(md5sum __SP__UNK)'|||b'md5sum __SP__UNK | md5sum'|||
+b''|||b"echo __SP__UNK | md5sum | cut -d ' ' -f 1 | md5sum"|||b"echo __SP__UNK | md5sum | cut -d ' ' -f 1 | rev"|||
+b''|||b''|||b'find . -type f | xargs -I {} ls -l {} | tail -n 10 | xargs -I {} echo {}'|||
+b''|||b'echo __SP__UNK | tee __SP__UNK'|||b'echo $(basename __SP__UNK)'|||
+b''|||b'cd $(whoami)'|||b''|||
+b''|||b'cd $(which __SP__UNK)'|||b''|||
+b'find __SP__UNK -user __SP__UNK -exec chgrp __SP__UNK {} \\;'|||b'find / -user __SP__UNK -exec chgrp __SP__UNK {} \\;'|||b'find . -user __SP__UNK -exec chgrp __SP__UNK {} \\;'|||
+b'chgrp __SP__UNK __SP__UNK __SP__UNK __SP__UNK'|||b'chgrp __SP__UNK __SP__UNK __SP__UNK'|||b'chgrp __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK'|||
+b'chown root:root script.sh'|||b'chown root:root __SP__UNK'|||b'chown root:root root:root'|||
+b'chown root __SP__UNK'|||b'chown root:root script.sh'|||b''|||
+b'chown __SP__UNK bin'|||b'chown __SP__UNK __SP__UNK'|||b'chown __SP__UNK public_html'|||
+b'find . -name __SP__UNK -exec chown __SP__UNK {} \\;'|||b'find . -name __SP__UNK -exec chgrp __SP__UNK {} \\;'|||b'find . -name __SP__UNK -print0 | xargs -0 -I {} chown __SP__UNK {}'|||
+b'find /var/www/ -type f -name "*.php" -exec chmod 644 {} \\;'|||b'find /var/www/ -type f -name "*.php" -exec chmod 755 {} \\;'|||b'find __SP__UNK -type f -exec chmod 644 {} \\;'|||
+b'gzip -l __SP__UNK'|||b'gzip __SP__UNK'|||b'bzip2 __SP__UNK'|||
+b''|||b"cat $file | grep -i __SP__UNK | cut -d ' ' -f 1 | xargs -I {} grep __SP__UNK {}"|||b''|||
+b''|||b''|||b'ssh -f __SP__UNK'|||
+b'mount | grep __SP__UNK'|||b'df | grep __SP__UNK'|||b'df __SP__UNK | grep __SP__UNK'|||
+b''|||b'mount | grep __SP__UNK'|||b"echo __SP__UNK | grep __SP__UNK | cut -d ' ' -f 1 | sort | uniq | xargs -I {} grep __SP__UNK {}"|||
+b''|||b'mount | grep __SP__UNK'|||b"echo __SP__UNK | grep __SP__UNK | cut -d ' ' -f 1 | sort | uniq | xargs -I {} grep __SP__UNK {}"|||
+b''|||b"find . -name '*.php' | xargs -I {} cat {} | xargs -I {} echo {}"|||b"find . -name '*.php' -type f | xargs -I {} cat {} | xargs -I {} echo {}"|||
+b'chmod __SP__UNK __SP__UNK'|||b'chmod __SP__UNK __SP__UNK __SP__UNK __SP__UNK'|||b'chmod __SP__UNK __SP__UNK __SP__UNK .profile'|||
+b''|||b''|||b'echo -e __SP__UNK | sort | uniq -c | sort -n'|||
+b'gzip __SP__UNK'|||b'gzip "$file"'|||b'gzip -c __SP__UNK'|||
+b'find __SP__UNK -type f -exec bzip2 {} \\; | xargs -I {} tar -c -v -f __SP__UNK {}'|||b'find __SP__UNK -type f -exec gzip {} \\; | xargs -I {} tar -c -v -f __SP__UNK {}'|||b'find __SP__UNK -type f -exec bzip2 {} \\; | xargs -I {} tar -r -v -f __SP__UNK {}'|||
+b''|||b"find . -type f \\( -name __SP__UNK -or -name __SP__UNK -or -name 'core' \\) -exec gzip {} \\;"|||b'find . -type f \\( -name __SP__UNK -or -name __SP__UNK \\) -exec gzip {} \\;'|||
+b'cat __SP__UNK | xargs -r -I {} cat {} | xargs -I {} cat {}'|||b'cat __SP__UNK | xargs -I {} cat {} | tail -n 1'|||b'cat __SP__UNK | xargs -r -I {} cat {} | xargs -I {} echo {}'|||
+b'cat __SP__UNK | xargs -n 1 -I {} echo {}'|||b"cat file.txt | tr -s ' ' | cut -d ' ' -f 1 | uniq"|||b"cat file.txt | tr -s ' ' | cut -d ' ' -f 1"|||
+b''|||b''|||b'find __SP__UNK -name __SP__UNK | sort | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK'|||
+b''|||b'echo __SP__UNK | rev | cut -d __SP__UNK -f 1 | rev | cut -d __SP__UNK -f 1 | rev'|||b"echo __SP__UNK | rev | cut -d __SP__UNK -f 1 | rev | cut -d ' ' -f 1 | rev"|||
+b''|||b'find . -type f -exec ls -s {} \\; | sort -n | tail -n 1 | xargs -I {} rm {}'|||b'find . -type f -exec ls -s {} \\; | sort -n | tail - 1 | xargs -I {} rm {}'|||
+b''|||b'echo __SP__UNK | tr __SP__UNK __SP__UNK'|||b'echo __SP__UNK | cut -d __SP__UNK -f 1'|||
+b''|||b'echo -n __SP__UNK | od -A n -t x1 | tr -d __SP__UNK'|||b'cat /dev/urandom | tr -d -c __SP__UNK | od -t x1 -w 1 | cut -b 8-'|||
+b'rsync -a -v -R __SP__UNK __SP__UNK'|||b'cp -R __SP__UNK __SP__UNK'|||b'rsync -r -v -v -p __SP__UNK __SP__UNK'|||
+b'find __SP__UNK -type d -exec cp __SP__UNK {} \\;'|||b'find __SP__UNK -type d | cpio -p -v -d -m __SP__UNK'|||b'find __SP__UNK -type d -exec mkdir -p dest/{} \\; -or -type d -exec cp __SP__UNK {} \\;'|||
+b'rsync -r -v -v __SP__UNK __SP__UNK'|||b''|||b'rsync -r __SP__UNK __SP__UNK'|||
+b'find __SP__UNK -name __SP__UNK -exec cp {} __SP__UNK \\;'|||b'find __SP__UNK -type f -exec cp {} __SP__UNK \\;'|||b'find __SP__UNK -name __SP__UNK -print0 | xargs -0 -I {} cp -t ~/foo/bar {}'|||
+b''|||b'find . -type d -printf __SP__UNK | sort | tail -n 1 | xargs -n 1 -I {} cp -t ~/foo/bar {}'|||b'find . -type d -printf __SP__UNK | sort | tee __SP__UNK | xargs -n 1 -I {} cp -t ~/foo/bar {}'|||
+b''|||b''|||b''|||
+b''|||b''|||b''|||
+b''|||b''|||b''|||
+b'find . -name __SP__UNK | xargs -I {} wc -l {}'|||b'find . -name __SP__UNK | xargs -I {} cat {} | wc -l'|||b'cat __SP__UNK | wc -l'|||
+b''|||b'find __SP__UNK -mtime __SP__UNK -type f -print0 | xargs -0 -I {} grep -l __SP__UNK {} | wc -l'|||b'find . -type f -mtime __SP__UNK -print0 | xargs -0 -I {} grep -l __SP__UNK {} | wc -l'|||
+b''|||b'find . -name "*.rb" -type f -print0 | xargs -0 -I {} wc -l {}'|||b'wc -l $(find . -name \\*.txt)'|||
+b''|||b"finger | cut -d ' ' -f 1 | sort | uniq | wc -l"|||b"finger | cut -d ' ' -f 1 | tail - 1 | cut -f 2 | wc -l"|||
+b'find . -type f | wc -l'|||b"find . -name '*.php' -type f | xargs -I {} wc -l {}"|||b"find . -name '*.php' | xargs -I {} wc -l {}"|||
+b'diff -U file1 file2 | grep __SP__UNK | grep -v __SP__UNK | wc -l'|||b'diff -U file1 file2 | grep __SP__UNK | wc -l'|||b"diff -U file1 file2 | grep __SP__UNK | cut -d ' ' -f 1 | sort | uniq | wc -l"|||
+b''|||b''|||b''|||
+b'find . -name file1 | wc -l'|||b'find . -name file1 -exec wc -l {} \\;'|||b''|||
+b'cat __SP__UNK | wc -l'|||b'cat *.txt | wc -l'|||b'cat $(cat __SP__UNK | wc -l)'|||
+b''|||b'find __SP__UNK -type f | wc -l'|||b'find /directory/containing/files -type f -print0 | xargs -0 -I {} wc -l {}'|||
+b'find __SP__UNK -type f -name __SP__UNK | wc -l'|||b'find __SP__UNK -type f -iname __SP__UNK | wc -l'|||b'find __SP__UNK -name __SP__UNK -type f | wc -l'|||
+b''|||b''|||b''|||
+b'mkdir __SP__UNK | grep __SP__UNK'|||b''|||b''|||
+b'find / -user __SP__UNK -exec tar -r -v -f __SP__UNK {} \\;'|||b'find / -user __SP__UNK -exec touch {} \\;'|||b'find / -user 999 -exec tar -r -v -f __SP__UNK {} \\;'|||
+b'tar -I __SP__UNK -c -f __SP__UNK __SP__UNK'|||b'tar -I -c -f __SP__UNK __SP__UNK | tar -x -v -f -'|||b'tar -c -z -v -f __SP__UNK -C __SP__UNK __SP__UNK'|||
+b'tar -I __SP__UNK -c -f __SP__UNK __SP__UNK'|||b'tar -I -c -f __SP__UNK __SP__UNK | tar -x -v -f -'|||b'tar -c -z -v -f __SP__UNK -C __SP__UNK __SP__UNK'|||
+b'tar --one-file-system -c -z -v -f __SP__UNK | split -b __SP__UNK - __SP__UNK'|||b'tar --one-file-system -c -z -f backup.tar.gz | split -b __SP__UNK - __SP__UNK'|||b'tar --one-file-system -c -v -f __SP__UNK __SP__UNK | split -b __SP__UNK - __SP__UNK'|||
+b'tar -I __SP__UNK -c -f __SP__UNK __SP__UNK'|||b''|||b'tar -I -c -f __SP__UNK __SP__UNK | tar -x -f -'|||
+b"ssh-keygen -f __SP__UNK -N ''"|||b'ssh-keygen -f __SP__UNK -N -f'|||b'ssh-keygen -f __SP__UNK -N ""'|||
+b''|||b'yes | head -n __SP__UNK | xargs -I {} echo __SP__UNK | xargs -I {} tar -c -v -f __SP__UNK {}'|||b''|||
+b'find __SP__UNK -type f -exec ln -s {} \\;'|||b'find __SP__UNK -type f -exec ln -s {} __SP__UNK \\;'|||b''|||
+b''|||b'ln -s __SP__UNK __SP__UNK'|||b'find . -lname __SP__UNK -exec ln -s {} __SP__UNK \\;'|||
+b''|||b''|||b''|||
+b'ln -s __SP__UNK www'|||b'ln -s __SP__UNK __SP__UNK'|||b'ln -s __SP__UNK foo'|||
+b'ln -s __SP__UNK www'|||b'ln -s __SP__UNK __SP__UNK'|||b'ln -s __SP__UNK $(hostname)'|||
+b'ln -s __SP__UNK __SP__UNK'|||b''|||b''|||
+b'mkdir -p __SP__UNK'|||b'mkdir -p $(dirname __SP__UNK)'|||b'find __SP__UNK -type d -print0 | xargs -0 -I {} mkdir -p {}'|||
+b'mkdir __SP__UNK'|||b'find __SP__UNK -type d -print0 | cpio -0 -d -c __SP__UNK | tar -x -v -f -'|||b'find __SP__UNK -type d -print0 | xargs -0 -I {} mkdir __SP__UNK'|||
+b'mkdir dir1'|||b'mkdir __SP__UNK'|||b'mkdir backup'|||
+b'ln -s $(readlink -f __SP__UNK)'|||b''|||b'ln -s $(find . -name __SP__UNK)'|||
+b'mktemp -d'|||b'dirname $(mktemp -d)'|||b'dirname $(mktemp -u -d __SP__UNK)'|||
+b'mktemp'|||b''|||b''|||
+b'mktemp -d --tmpdir=__SP__UNK -t __SP__UNK'|||b''|||b''|||
+b'mktemp -t __SP__UNK'|||b'mktemp -u -t __SP__UNK'|||b"echo __SP__UNK | rev | cut -d ' ' -f 4 | xargs -I {} tar -c -v -f __SP__UNK {}"|||
+b'mktemp -d'|||b'mktemp -d -t'|||b''|||
+b'find root -mindepth 2 -type d -delete'|||b'find root -mindepth 2 -maxdepth 2 -type d -delete'|||b'find root -mindepth 2 -type d -exec rm -r -f {} \\;'|||
+b'find __SP__UNK -mtime +1 -exec rm -r -f {} \\;'|||b'find __SP__UNK -mtime __SP__UNK -exec rm {} \\;'|||b'find __SP__UNK -mtime +2 -exec rm {} \\;'|||
+b'find . -name __SP__UNK -exec rm {} \\;'|||b'find . -name __SP__UNK -print0 | xargs -0 -I {} rm -r -f {}'|||b'find . -name __SP__UNK -print0 | xargs -0 -I {} rm {}'|||
+b'find . -inum $inum -exec rm {} \\;'|||b'find . -inum __SP__UNK -exec rm {} \\;'|||b'find . -inum $inum -delete'|||
+b'find . -name __SP__UNK -exec rm {} \\;'|||b'find . -name __SP__UNK -delete'|||b'find . -name __SP__UNK | xargs -I {} rm {}'|||
+b'find . -name __SP__UNK -exec rm {} \\;'|||b'find . -name vmware-*.log -delete'|||b'find . -name __SP__UNK -delete'|||
+b'find . -type f | xargs -I {} rm -f {}'|||b'find . -type f -delete | xargs -I {} rm -f {}'|||b'find . -maxdepth 1 -type f | xargs -I {} rm -f {}'|||
+b'find / -name "*.txt" -delete'|||b'find / -name "*.txt" -exec rm {} \\;'|||b'find / -type f -name "*.txt" -delete'|||
+b'find __SP__UNK -mtime +7 -exec rm {} \\;'|||b'find __SP__UNK -mtime +7 -print0 | xargs -0 -I {} rm {}'|||b'find __SP__UNK -type f -atime +7 -delete'|||
+b'find . -type f -atime +30 -exec rm {} \\;'|||b'find . -type f -atime +5 -exec rm {} \\;'|||b'find . -type f -atime +30 -delete'|||
+b''|||b'ls -l -t | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK'|||b'ls -t -p | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK'|||
+b'find __SP__UNK -mtime +90 -exec rm {} \\;'|||b'find __SP__UNK -mtime +90 | xargs -I {} rm {}'|||b'find __SP__UNK -mtime +90 -print | xargs -I {} rm {}'|||
+b"column -t -s $'\\t' __SP__UNK"|||b"tr -s ' ' | column -t"|||b"column -t -s $'\\t' list-of-entries.txt"|||
+b'od -t __SP__UNK __SP__UNK'|||b'od -c __SP__UNK'|||b'od -t __SP__UNK file'|||
+b'find . -size +10k -exec ls -l -s {} \\; | sort -n -r'|||b'find . -size +10k -exec ls -l -d {} \\;'|||b'find . -size +10M -exec ls -l -d {} \\;'|||
+b'find / -size __SP__UNK -exec ls -l {} \\;'|||b'find / -size +100M -exec ls -l {} \\;'|||b'find / -size __SP__UNK -exec ls -s -h {} \\;'|||
+b''|||b'find . -type f -name "*.java" -exec ls -l {} \\;'|||b'find . -type f -name __SP__UNK -exec ls -a -l {} \\; | sort -n -r | head - 1'|||
+b'find . -name *.gif -size __SP__UNK -exec ls {} \\;'|||b'find . -name __SP__UNK -size __SP__UNK -exec ls -l {} \\;'|||b'find . -name *.gif -size __SP__UNK -exec ls -l {} \\;'|||
+b'find /home/david -amin +2 -amin -6'|||b'find /home/david -amin -2 -name __SP__UNK'|||b"find /home/david -amin -2 -name '*.c'"|||
+b'find . -empty'|||b'find . -type f -empty'|||b'find . -size 0k'|||
+b'find /home -group test'|||b'find /var/www -group root -type f -print0 | xargs -0 -I {} ls -l {}'|||b'find /var/www -group root -type f -print0 | xargs -0 -I {} file {}'|||
+b''|||b'find . -maxdepth 1 -type d -print0 | xargs -0 -I {} mv {} __SP__UNK'|||b'find . -maxdepth 1 -type d -print0 | xargs -0 -I {} mv -t destDir {}'|||
+b'find . -maxdepth 1 -name __SP__UNK -prune -or -print'|||b'find . -maxdepth 1 -not -name __SP__UNK'|||b'find . -maxdepth 1 -not -path __SP__UNK'|||
+b"find . ! -name '.' -prune"|||b"find . ! -name '.' ! -name '.'"|||b'find . ! -path __SP__UNK -prune -or -print'|||
+b'find . \\( -name __SP__UNK -or -name __SP__UNK \\)'|||b'find . \\( -name __SP__UNK -or -name __SP__UNK \\) -prune -or -name __SP__UNK -print'|||b'find . -regextype posix-extended -regex __SP__UNK'|||
+b'find . -name __SP__UNK'|||b'find . -path __SP__UNK -prune -or -name __SP__UNK -print'|||b'find . \\( -name __SP__UNK -or -name __SP__UNK \\)'|||
+b'find . -name __SP__UNK'|||b"find . -name 'my*'"|||b'find . \\( -name __SP__UNK -or -name __SP__UNK \\)'|||
+b'find / -path __SP__UNK'|||b'find / -size __SP__UNK'|||b"find / -path '*/*config'"|||
+b'find /etc ! -path __SP__UNK ! -path __SP__UNK'|||b'find /etc ! -path __SP__UNK -and ! -path __SP__UNK'|||b'find /etc ! -path __SP__UNK -not -path __SP__UNK'|||
+b'find /home -group test'|||b'find /home -nogroup'|||b'find /home ! -group test'|||
+b'find /home -perm __SP__UNK'|||b'find /home -type f -perm __SP__UNK'|||b'find /home ! -perm __SP__UNK'|||
+b"find __SP__UNK -type f -print0 | xargs -0 -I {} grep -F 'example' {}"|||b'find __SP__UNK -type f -exec grep -q __SP__UNK {} \\; -print'|||b'find __SP__UNK -type f | xargs -I {} dirname {} | sort | uniq'|||
+b'find . -name "text"'|||b'find .'|||b'find . -name __SP__UNK'|||
+b'find . -newermt __SP__UNK'|||b'find . -newermt __SP__UNK -and ! -newermt __SP__UNK'|||b'find . -newermt __SP__UNK ! -newermt __SP__UNK -ls'|||
+b''|||b'find . -type f -name __SP__UNK -print0 | xargs -0 -I {} rename __SP__UNK {}'|||b"find /home/you -iname '*.ogg' -type f -print0 | xargs -0 -I {} tar -c -z -v -f __SP__UNK {}"|||
+b'find . -newer __SP__UNK'|||b'find . -newer /bin/sh'|||b'find . -newer __SP__UNK -print'|||
+b'find . -mtime -1 -type f'|||b'find . -mtime -1 -type f -exec ls -l {} \\;'|||b'find . -mtime -1 -type f -print'|||
+b'find __SP__UNK -type f -mtime __SP__UNK ! -name ".*"'|||b'find __SP__UNK -type f -mtime __SP__UNK -not -name __SP__UNK'|||b'find __SP__UNK -type f -mtime __SP__UNK ! -name ".*" -exec ls -l {} \\;'|||
+b'find __SP__UNK -type f'|||b'find /home/user/demo -type f -print'|||b'find __SP__UNK f'|||
+b'find __SP__UNK -type f'|||b'find /home/user/demo -type f -print'|||b'find __SP__UNK f'|||
+b'find . -name "*.txt"'|||b'find . -name "*.txt" -print'|||b'find . -name "*.txt" -exec echo {} \\;'|||
+b''|||b''|||b''|||
+b''|||b'find . -type f -exec cat {} \\; | tee __SP__UNK'|||b'find . -type f -print0 | xargs -0 -I {} cat {} | tee -a __SP__UNK'|||
+b'uname -a'|||b'uname -r'|||b'uname -r | cut -d . -f 1'|||
+b'diff -a -r dir1/ dir2/'|||b'diff -a -r -q folder1 folder2'|||b"find . \\( -name a.out -or -name '*.o' -or -name '*.o' -or -name 'core' \\) -exec rm {} \\;"|||
+b'find . -name __SP__UNK -or -name __SP__UNK'|||b'find . -name __SP__UNK'|||b'find . \\( -name __SP__UNK -or -name __SP__UNK \\)'|||
+b'du -b __SP__UNK'|||b'cat __SP__UNK | xargs -I {} du -c -h {} | head -n 1'|||b'cat __SP__UNK | xargs -n 1 -I {} du -c -h {}'|||
+b'find . -size __SP__UNK -print'|||b'find . -size +10k -exec ls -l {} \\;'|||b'find . -size __SP__UNK -exec ls -l {} \\;'|||
+b'w'|||b'echo $(whoami)'|||b'top'|||
+b'find ~ -size __SP__UNK -type f -ls'|||b'find /home -type f -size __SP__UNK -exec ls -l {} \\;'|||b'find ~ -size __SP__UNK -type f -exec ls -l {} \\;'|||
+b'find ~ -type f -size __SP__UNK -exec ls -l {} \\;'|||b'find ~ -type f -size __SP__UNK -ls'|||b'find /home -type f -size __SP__UNK -exec ls -l {} \\;'|||
+b''|||b'find . -name ".txt" | grep -v __SP__UNK | xargs -I {} ls -l -t {} | tail -n 1'|||b''|||
+b'find . -name "*.c" | xargs -I {} cat {} | wc -l'|||b"find . -name '*.c' | xargs -I {} cat {} | wc -l"|||b'find . -name "*.c" | xargs -I {} wc -l {}'|||
+b''|||b'find . -type f -exec cat {} \\; | wc -l'|||b'find . | xargs -I {} cat {} | wc -l'|||
+b'tree -p -u -g -f -i'|||b'find . -type f -exec chmod 664 {} \\;'|||b'find . -type f -exec chmod u=rw,g=r,o= {} \\;'|||
+b'find . -name "*.old" -exec du -h {} \\;'|||b'find . -name "*.old" -exec du -h {} +'|||b'find . -name "*.old" -exec du -c -h {} \\;'|||
+b''|||b'cat __SP__UNK | xargs -n 1 -I {} du -c -h {} | head -n 1'|||b'cat __SP__UNK | xargs -n 1 -I {} du -c -h {} | head - 1'|||
+b''|||b"yes __SP__UNK | head -n 10 | cut -d ' ' -f 2 | tail -n 10"|||b"yes __SP__UNK | head -c 10 | cut -d ' ' -f 2 | tail -n 10 | head -n 10"|||
+b'curl __SP__UNK __SP__UNK __SP__UNK'|||b'curl __SP__UNK | bash'|||b''|||
+b'curl __SP__UNK | sh'|||b'curl __SP__UNK | bash'|||b'curl __SP__UNK __SP__UNK __SP__UNK'|||
+b''|||b'find __SP__UNK -type f | grep -i __SP__UNK | xargs -I {} tar -r -v -f __SP__UNK {}'|||b'find __SP__UNK -type f | grep -i __SP__UNK | xargs -I {} tar -c -v -f __SP__UNK {}'|||
+b'od -t __SP__UNK __SP__UNK'|||b'od -t c __SP__UNK'|||b'find __SP__UNK -type f -print0 | od -t -t x1 -t x1 | grep -E -o __SP__UNK | od -t x1'|||
+b''|||b'top -b -n 1 | grep -v __SP__UNK | grep -v __SP__UNK | split -d -l 1000000 - __SP__UNK'|||b'top -b -n 1 | grep -v __SP__UNK | split -d -l 1000000 - __SP__UNK'|||
+b''|||b"hostname | cut -d ' ' -f 1 | xargs -I {} dirname {} | xargs -I {} dirname {} | tee -a"|||b"hostname | cut -d ' ' -f 1 | xargs -I {} dirname {} | tee -a __SP__UNK"|||
+b'shopt -s __SP__UNK'|||b"shopt -s __SP__UNK | cut -d ' ' -f 1 | grep -o __SP__UNK | cut -d ' ' -f 1 | grep -o __SP__UNK"|||b"shopt -s __SP__UNK | cut -d ' ' -f 1 | grep -o __SP__UNK | tr -s ' ' | cut -d ' ' -f 1"|||
+b''|||b'find . -type d -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||b'find . -type d -exec echo __SP__UNK \\; | xargs -I {} tar -c -v -f __SP__UNK {}'|||
+b"find . -path __SP__UNK -prune -or -name '*.js' -print"|||b'find . -name "*.js" -not -path __SP__UNK'|||b'find . -iname example.com | grep -v __SP__UNK'|||
+b''|||b'watch -d ls -l'|||b'watch -n 1 ls -l -t | tail -n __SP__UNK | head -n 3'|||
+b''|||b'watch ls -l __SP__UNK'|||b'watch echo -e __SP__UNK'|||
+b''|||b'watch -n 1 date'|||b'watch -n 1 ps -C java -o __SP__UNK'|||
+b''|||b'find . -name __SP__UNK -print0 | xargs -0 -I {} chmod __SP__UNK {}'|||b'find . -type f -exec ls -s {} \\; | sort -n -r | head -n 1'|||
+b''|||b'watch -n 1 ps -e -f | grep -E -o __SP__UNK | cut -d / -f 3 | head -n 1'|||b"watch -n 1 ps -e -f | grep -E -o __SP__UNK | cut -d ' ' -f 1 | cut -d ' ' -f 1"|||
+b''|||b''|||b'$(echo __SP__UNK | tee -a __SP__UNK)'|||
+b''|||b''|||b''|||
+b'tar -x -z -v -f backup.tar.gz'|||b'tar -x -z -f backup.tar.gz'|||b'tar -x -z -x -v -f -'|||
+b''|||b''|||b''|||
+b''|||b'dig +short __SP__UNK __SP__UNK'|||b"dig -x __SP__UNK | grep PTR | cut -d ' ' -f 1 | grep -v __SP__UNK | grep -v __SP__UNK"|||
+b''|||b"echo __SP__UNK | rev | cut -d ' ' -f 1 | rev"|||b"echo __SP__UNK | rev | cut -d ' ' -f 1 | rev | cut -d ' ' -f 1 | rev"|||
+b''|||b"find /directory/containing/files -type f -exec grep -H 'pattern_to_search' {} +"|||b'find /directory/containing/files -type f -print0 | xargs -0 -I {} grep __SP__UNK {}'|||
+b'find . -name __SP__UNK -prune -or -name __SP__UNK -print'|||b'find . -path __SP__UNK -prune -or -name __SP__UNK -print'|||b'find . -name __SP__UNK -type d -prune -or -name __SP__UNK -print'|||
+b'find . -name __SP__UNK'|||b'find . -type f -name __SP__UNK'|||b'find . -name __SP__UNK | xargs -I {} grep __SP__UNK {}'|||
+b'find __SP__UNK -path __SP__UNK -prune -or \\( -name __SP__UNK -or -name __SP__UNK \\) -print'|||b'find __SP__UNK -name __SP__UNK | grep __SP__UNK'|||b'find __SP__UNK -name __SP__UNK -type f | xargs -I {} grep -l __SP__UNK {}'|||
+b'find /data -type f -perm 400 -print'|||b'find /data -type f -perm 400'|||b'find /data -type f -perm 400 -exec chmod 644 {} \\;'|||
+b'find . -mtime +7 -name "*.html" -print'|||b'find . -type f -mtime +7'|||b'find . -name __SP__UNK -mtime +7'|||
+b'find / -name __SP__UNK'|||b'find / -name __SP__UNK -print'|||b'find / -type f -name __SP__UNK'|||
+b'find __SP__UNK -name __SP__UNK'|||b'find __SP__UNK -name __SP__UNK | xargs -I {} find {} -name __SP__UNK'|||b'find __SP__UNK -name __SP__UNK | xargs -I {} grep __SP__UNK {}'|||
+b"find __SP__UNK -name '*.c' | xargs -I {} grep __SP__UNK {}"|||b'find __SP__UNK -name "*.c"'|||b'find /usr/src -name \\*.c -size __SP__UNK'|||
+b'find . -name __SP__UNK -exec chmod 775 {} \\;'|||b'chmod 640 $(find . -name __SP__UNK)'|||b'find . -type f -name __SP__UNK -exec chmod 775 {} \\;'|||
+b''|||b'find __SP__UNK -type f -name __SP__UNK -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||b'find __SP__UNK -type f -name __SP__UNK -print0 | xargs -0 -I {} cat {} | xargs -I {} cp {} __SP__UNK'|||
+b'find / -type f -name "*.conf"'|||b'find / -type f -name __SP__UNK'|||b'find / -type f -iname "*.conf"'|||
+b''|||b'find / -name __SP__UNK -print0 | xargs -0 -I {} dirname {} | sort | uniq | xargs -I {} dirname {}'|||b'find / -name __SP__UNK -print0 | sort -z | xargs -0 -I {} dirname {} | sort | uniq'|||
+b''|||b'find . -name "*.log" -exec grep -i __SP__UNK {} \\;'|||b'find . -name "*.log" -exec grep __SP__UNK {} \\;'|||
+b''|||b'find __SP__UNK -type f \\( -name __SP__UNK -or -name __SP__UNK -or -name __SP__UNK \\) -print0 | xargs -0 -I {} echo {}'|||b'find __SP__UNK -type f -name __SP__UNK -print0 | xargs -0 -n 1 -I {} echo {}'|||
+b'find . -name "*.rb"'|||b'find ./ -name "*.rb"'|||b'find . -name "*.rb" -or -name "*.rb"'|||
+b''|||b'find . \\( -name __SP__UNK -or -name __SP__UNK \\) -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||b'find . -name __SP__UNK | xargs -I {} dirname {} | xargs -I {} dirname {} | xargs -I {} dirname {}'|||
+b''|||b'find . -name "*.rb" -type f -print0 | xargs -0 -I {} grep -H -n \'$test\' {}'|||b"find . -type f -name __SP__UNK -print0 | xargs -0 -I {} grep -H -n '$test' {}"|||
+b''|||b'find . -maxdepth 1 -type f -name __SP__UNK -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||b'find . -maxdepth 1 -type f -name __SP__UNK -print0 | xargs -0 -I {} tar -c -v -z -f __SP__UNK {}'|||
+b'find . -maxdepth 2 -name __SP__UNK'|||b'find . -mindepth 2 -maxdepth 2 -name __SP__UNK'|||b'find . -mindepth 2 -maxdepth 2'|||
+b''|||b"find . -name '*.txt' -print0 | xargs -0 -n 1 -I {} dirname {} | xargs -I {} cat {} | sh"|||b"find . -name '*.txt' -print0 | xargs -0 -I {} tar -c -z -v -f __SP__UNK {}"|||
+b'find . -name "*.txt" ! -name __SP__UNK -print'|||b'find . -name "*.txt" ! -name __SP__UNK'|||b'find . -name "*.txt" ! -path __SP__UNK'|||
+b'find __SP__UNK -name __SP__UNK'|||b''|||b'find __SP__UNK -name __SP__UNK -exec find {} -type f -name __SP__UNK -or -name __SP__UNK -or -name __SP__UNK -or -name __SP__UNK \\;'|||
+b'find . -type f -name __SP__UNK ! -name __SP__UNK'|||b'find . -name __SP__UNK ! -name __SP__UNK'|||b'find . -name __SP__UNK -type f | xargs -I {} grep __SP__UNK {}'|||
+b'find . -type f -name "*.java" -exec rm -f {} \\;'|||b'find . -name "*.java" -exec rm {} \\;'|||b'find . -name __SP__UNK -exec rm {} \\;'|||
+b'find /var/www/ -name wp-config.php'|||b'find /var/www/ -name wp-config.php -type f -print'|||b'find /var/www -name *.gif -print0 | xargs -0 -I {} echo {}'|||
+b''|||b"find . -name '*.txt' -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}"|||b"find . -type f -name '*.txt' -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}"|||
+b'find . -user __SP__UNK -name __SP__UNK'|||b'find . -user __SP__UNK'|||b'find . -user __SP__UNK -iname "*.pdf"'|||
+b'find . -maxdepth 1 -type f'|||b'find . -maxdepth 1 -type f -name __SP__UNK'|||b'find . -type f -name __SP__UNK'|||
+b'find /data -type f -perm 400 -print'|||b'find /data -type f -perm 400 -print0 | xargs -0 -I {} chmod __SP__UNK {}'|||b'find /data -type f -perm 400 -print0'|||
+b'find . -perm 777 -print'|||b'find . -perm 777 -type f -perm 0777 -print'|||b'find . -perm 0777 -print'|||
+b''|||b'find . -type f -name __SP__UNK -exec cat {} \\; | xargs -I {} tar -c -v -f __SP__UNK {}'|||b'find . -type f -name __SP__UNK -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||
+b'find . -name __SP__UNK'|||b'find ./ -name __SP__UNK'|||b"find . -name '*.p[lm]'"|||
+b'find __SP__UNK -mindepth 3 -type d'|||b'find . -mindepth 3 -type d'|||b'find ~/container -mindepth 3 -type d'|||
+b'find . -maxdepth 1 -type d'|||b'find . -mindepth 1 -maxdepth 1 -type d'|||b'find . -mindepth 1 -type d'|||
+b'find . -type d ! -wholename __SP__UNK'|||b'find . -type d ! -wholename __SP__UNK | sort'|||b"find . -type d ! -name '.?*' -exec sort -r -f {} \\;"|||
+b'find . -mmin -60 -type d'|||b'find . -mmin -60 -type d | xargs -r -I {} ls -l -d {}'|||b'find . -mmin -60 -type d | xargs -r -I {} ls -l {}'|||
+b'find / -type d -name __SP__UNK'|||b'find / -name __SP__UNK -type d'|||b'find / -name __SP__UNK'|||
+b'find __SP__UNK -maxdepth 2 -type d'|||b'find mydir -maxdepth 2 -type d'|||b'find __SP__UNK -mindepth 2 -maxdepth 2 -type d'|||
+b'find / -perm 777 -type d'|||b'find / -perm 777'|||b'find / -type d -perm 777'|||
+b'find __SP__UNK -type d | grep __SP__UNK'|||b''|||b'find __SP__UNK -type d -exec grep __SP__UNK /dev/null {} \\;'|||
+b'find / -type d -name "apt"'|||b'find / -type d -name "apt" -ls'|||b'find / -name "apt" -type d'|||
+b'find __SP__UNK -path __SP__UNK -prune -or -type d -print'|||b'find __SP__UNK -path __SP__UNK -prune -or -type d -print0'|||b'find __SP__UNK -type d -path __SP__UNK -prune -or -path __SP__UNK -prune -or -type d -print'|||
+b'find __SP__UNK -type d -exec chmod 755 {} \\;'|||b'chmod 755 $(find __SP__UNK -type d)'|||b'find __SP__UNK -type d -print0 | xargs -0 -I {} chmod 755 {}'|||
+b'find __SP__UNK -mindepth 1 -type d'|||b'find __SP__UNK -mindepth 1 -maxdepth 1 -type d'|||b'find __SP__UNK -maxdepth 1 -type d'|||
+b''|||b'find __SP__UNK -type d -mtime +0 -exec mv {} __SP__UNK \\;'|||b'find __SP__UNK -type d -name __SP__UNK -printf __SP__UNK | sort | tee -a __SP__UNK'|||
+b'find __SP__UNK -L'|||b'find __SP__UNK -L -type l -printf __SP__UNK'|||b'find __SP__UNK -type f -print0 | xargs -0 -I {} echo {}'|||
+b'find . -mindepth 1'|||b'find . -maxdepth 1'|||b'find . -mindepth 1 -maxdepth 1'|||
+b''|||b'find ./ -exec echo __SP__UNK \\; -exec echo {} \\; | xargs -I {} echo {} | xargs -I {} echo {}'|||b'find ./ -exec echo __SP__UNK \\; | xargs -I {} echo {} | xargs -I {} echo {}'|||
+b'find A -mindepth 1 -maxdepth 1'|||b'find A -maxdepth 1 -name __SP__UNK'|||b'find . -mindepth 1 -maxdepth 1 -name __SP__UNK'|||
+b'find . -name file -print0'|||b'find . -name file -printf __SP__UNK'|||b'find . -name file -okdir echo __SP__UNK \\;'|||
+b'find . -name foo -prune -or -name foo -print'|||b'find . -name foo -type d -prune -or -name foo -print'|||b'find . -path foo -prune -or -name foo -print'|||
+b'find . -name __SP__UNK'|||b'find ./ -name __SP__UNK'|||b'find . -iname __SP__UNK'|||
+b'find . -name __SP__UNK -mmin -5 -print'|||b'find . -mmin -5 -name __SP__UNK'|||b'find . -mmin -5 -print'|||
+b'find __SP__UNK -group __SP__UNK -print'|||b'find __SP__UNK -group __SP__UNK'|||b'find __SP__UNK -group staff -print'|||
+b'find . -maxdepth 1 -not -name __SP__UNK'|||b'find . -not -name __SP__UNK'|||b'find . -maxdepth 1 ! -name __SP__UNK'|||
+b'find __SP__UNK -mtime 0 -print'|||b'find __SP__UNK -mtime 0'|||b'find /var/tmp -mtime 0'|||
+b''|||b'find __SP__UNK | xargs -I {} dirname {}'|||b'find __SP__UNK | xargs -I {} find {} -type f {}'|||
+b''|||b'find __SP__UNK | xargs -I {} dirname {}'|||b'find __SP__UNK | xargs -I {} find {} -type f {}'|||
+b'find /path -mmin 30'|||b'find /path -mmin -30'|||b'find /path -amin 30'|||
+b'find __SP__UNK -printf __SP__UNK'|||b'find __SP__UNK -print0 | xargs -0 -I {} echo {}'|||b'find __SP__UNK | xargs -I {} echo {}'|||
+b''|||b'find __SP__UNK | xargs -I {} dirname {}'|||b'find __SP__UNK | xargs -I {} find {} -type f {}'|||
+b'find .'|||b'find | xargs'|||b'find | xargs -I {} find {}'|||
+b'find . | xargs -i -I {} echo {} {}'|||b'find . -print0 | xargs -0 -i -I {} echo {} {}'|||b'find . -print0 | xargs -0 -I {} echo {}'|||
+b'find . -print0 | xargs -0 -I {} echo {}'|||b'find . -print0 | xargs -0 -I {} file {}'|||b'find . -print0 | xargs -0 -I {} echo {}'|||
+b''|||b"find . -print0 | tr -s ' ' | tr ' ' '\\n' | tr ' ' '\\n' | tr ' ' '\\n' | tr ' ' '\\n'"|||b"find . -depth -print0 | tr -d ' ' | tr ' ' '\\n' | tr ' ' '\\n' | tr ' ' '\\n' | tr ' '"|||
+b'find | xargs -I {} chmod 775 {}'|||b'find . -exec chmod 775 {} \\;'|||b'find . -exec chmod 775 {} +'|||
+b'find . -size __SP__UNK'|||b'find . -size +10M'|||b'find . -size -500k'|||
+b'find . -name "*bash*"'|||b"find . -name '* *'"|||b'find . -exec grep -i __SP__UNK {} \\;'|||
+b'find . -name __SP__UNK -mtime +1'|||b'find . -name __SP__UNK -mtime +0'|||b'find ./ -name __SP__UNK -mtime +1'|||
+b''|||b'find __SP__UNK __SP__UNK -print0 | xargs -0 -I {} cp -t ~/foo/bar {}'|||b'find __SP__UNK -name __SP__UNK -print0 | xargs -0 -I {} cp -t ~/foo/bar {}'|||
+b''|||b'find __SP__UNK -name __SP__UNK -prune -or \\( -name __SP__UNK -or -name __SP__UNK \\) -print'|||b'find /usr/src -name CVS -prune -or \\( -name __SP__UNK -or -name __SP__UNK \\) -print'|||
+b'find . -type f -name __SP__UNK | wc -l'|||b"find . -name '*.foo' -exec wc -l {} \\;"|||b'find . -name __SP__UNK | wc -l'|||
+b''|||b'find /tmp/ -name __SP__UNK -type f -print0 | xargs -0 -I {} rename __SP__UNK {}'|||b'find /tmp/ -type f -name __SP__UNK -print0 | xargs -0 -I {} rename __SP__UNK {}'|||
+b'find __SP__UNK -mtime +90 -print'|||b'find __SP__UNK -mtime +3 -print'|||b'find __SP__UNK -type f -mtime +90 -print'|||
+b'find __SP__UNK -type f -print0 | xargs -0 -I {} ls -l {}'|||b'find __SP__UNK -type f -exec ls -l {} \\; | sort -n -r'|||b'find __SP__UNK -type f -exec ls -l {} \\;'|||
+b''|||b'find . -type f -exec echo {} \\; | xargs -I {} cat {} | xargs -I {} echo {}'|||b'find . -type f -exec echo {} \\; | xargs -I {} echo __SP__UNK {} | xargs -I {} echo {}'|||
+b"find . -depth -wholename __SP__UNK -prune -or -name '.*' -prune -or -print"|||b"find . -name '.?*' -prune -or -not -name '.*' -prune -or -name '.*' -prune -or -print"|||b"find . -name '.?*' -prune -or -not \\( -path __SP__UNK -prune \\) -or \\( ! -regex __SP__UNK \\)"|||
+b'find . -size __SP__UNK'|||b'find . -size -100M'|||b'find . -size __SP__UNK -print'|||
+b''|||b'find . -mtime -1 -type f -exec tar -r -v -f __SP__UNK {} \\;'|||b'find . -mtime -1 -type f -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||
+b'find . -cmin +2 -cmin -6'|||b'find . -amin -1'|||b'find . -amin +2 -amin -6'|||
+b'find . -mtime -1'|||b'find . -mtime -7 -type f'|||b'find . -mtime -1 -print'|||
+b'find . -size __SP__UNK'|||b'find . -size __SP__UNK -print'|||b'find ./ -size __SP__UNK'|||
+b'find . -size __SP__UNK'|||b'find ./ -size __SP__UNK'|||b'find . -size __SP__UNK -print'|||
+b'find . -perm /222'|||b'find . -type f -perm /222'|||b'find . -perm -0002 -print'|||
+b'find . -regextype posix-extended -regex __SP__UNK'|||b'find . -regex __SP__UNK'|||b'find . \\( -name __SP__UNK -or -name __SP__UNK \\)'|||
+b''|||b'find / -type f -name *.mp3 -size +10M -exec du -h {} \\;'|||b'find / -type f -name "*.txt" -size __SP__UNK -size __SP__UNK'|||
+b'find / -name __SP__UNK'|||b'find / -name __SP__UNK -print'|||b'find / \\( -name __SP__UNK -or -name __SP__UNK \\) -print'|||
+b'find __SP__UNK -user __SP__UNK'|||b'find __SP__UNK -user __SP__UNK -print'|||b'find __SP__UNK -user __SP__UNK -exec ls -l {} \\;'|||
+b'find ~ -size -100M'|||b'find ~ -size __SP__UNK'|||b'find ~ -size +100M'|||
+b'find $HOME -mtime -1'|||b'find ~ -mtime 2 -mtime __SP__UNK'|||b'find $HOME -mtime +365'|||
+b'find ~ -newer __SP__UNK'|||b'find $HOME -newer /tmp/foo'|||b'find $HOME -newer __SP__UNK'|||
+b'find ~ -name __SP__UNK'|||b'find ~ -type f -name __SP__UNK'|||b'find ~ \\( -name __SP__UNK -or -name __SP__UNK \\) -print'|||
+b'find /etc/ -mtime -1 -type f -exec echo {} \\;'|||b'find /etc/ -mtime -30 | xargs -I {} echo {}'|||b'find /etc/ -mtime -30 | xargs -0 -I {} echo {}'|||
+b''|||b''|||b''|||
+b''|||b'find /usr/ports/ -name Makefile -exec grep __SP__UNK {} + | wc -l'|||b'find /usr/ports/ -name Makefile -exec grep -l __SP__UNK {} + | wc -l'|||
+b'find . -maxdepth 1 -cmin +60 -name file'|||b'find . -maxdepth 1 -cmin +1 -type f'|||b'find . -maxdepth 1 -name file -ctime -1'|||
+b'find . -newer __SP__UNK'|||b'find . -newer foo.txt'|||b'find . -type f -newer __SP__UNK'|||
+b'find . -mtime -1'|||b'find . -daystart -mtime -1'|||b'find . -mtime -1 -print'|||
+b'find / -perm __SP__UNK'|||b'find / -group root | head'|||b'find / -group staff -print'|||
+b'find . -mtime 1'|||b'find . -mtime -1'|||b'find ./ -daystart -mtime 1'|||
+b'find . -mtime 1'|||b'find . -mtime -7'|||b'find . -daystart -mtime 1'|||
+b'find . -mtime -1'|||b'find /tmp/test/* -mtime -1'|||b'find ./ -mtime -1'|||
+b''|||b'find . -type f -mtime 1 | xargs -I {} cp -a -v --target-directory=__SP__UNK --parents {}'|||b'find . -type f -mtime 1 -print0 | xargs -0 -I {} cp -a -v --target-directory=__SP__UNK --parents {}'|||
+b'find / -group __SP__UNK'|||b'find / -group staff -print'|||b'find . -group staff -print'|||
+b'find __SP__UNK -type f -exec chmod 640 {} +'|||b'find __SP__UNK -type f -exec chmod 644 {} +'|||b'find __SP__UNK -type f -exec chmod __SP__UNK {} \\;'|||
+b'find __SP__UNK -type f -exec chmod 644 {} \\;'|||b'find __SP__UNK -type f -exec chmod 644 {} +'|||b'find __SP__UNK -type f -print0 | xargs -0 -I {} chmod 644 {}'|||
+b'find /path/to/dir -type f -exec chmod 644 {} \\;'|||b'find /path/to/dir -type f -print0 | xargs -0 -I {} chmod 644 {}'|||b'chmod 644 $(find /path/to/dir -type f)'|||
+b''|||b'find /path/to/dir -type f -mtime -7 -print0 | xargs -0 -I {} ls -l {} | head -n 1'|||b'find /path/to/dir -type f -mtime -7 -print0 | xargs -0 -n 1 -I {} echo {}'|||
+b''|||b'find __SP__UNK -type f | grep -E __SP__UNK | xargs -n 1 -I {} cat {} | tee -a __SP__UNK'|||b'find __SP__UNK -type f -print0 | xargs -0 -n 1 -I {} cat {} | tee -a __SP__UNK'|||
+b''|||b'find . -type f -exec grep __SP__UNK {} \\; | wc -l'|||b'find . -type f -exec grep __SP__UNK {} + | wc -l'|||
+b'find . -type f -exec chmod 775 {} \\;'|||b'find . -type f -exec chmod 775 {} +'|||b''|||
+b''|||b'find . -type f -iregex __SP__UNK -print0 | xargs -0 -I {} tar -c -z -v -f __SP__UNK {}'|||b'find . -type f -iregex __SP__UNK -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||
+b''|||b'find . -type f -exec grep __SP__UNK {} \\; -exec file {} \\;'|||b'find . -type f -print0 | xargs -0 -I {} file {} | grep -v __SP__UNK'|||
+b''|||b''|||b''|||
+b'find /path/to/dir -type f ! -perm 644'|||b'find /path/to/dir ! -perm 0644'|||b'find /path/to/dir ! -perm 644'|||
+b'find . -regex __SP__UNK -exec echo {} \\;'|||b'find . -type f -regex __SP__UNK -exec echo {} \\;'|||b'find . -type f \\( -name __SP__UNK -or -name __SP__UNK \\) -exec echo {} \\;'|||
+b"find . -name '*.[ch]' | xargs -I {} grep -l thing {}"|||b'find . -name __SP__UNK -exec basename {} \\; | grep __SP__UNK'|||b'find . -name __SP__UNK | xargs -I {} echo __SP__UNK {}'|||
+b''|||b'find / -path /proc -prune -or -path __SP__UNK -prune -or -name myfile -type f -print'|||b'find / -path /proc -prune -or -name myfile -type f -print'|||
+b''|||b'find /usr/ports/ -name __SP__UNK -print0 | xargs -0 -I {} grep -l __SP__UNK {} | wc -l'|||b'find /usr/ports/ -name __SP__UNK -exec grep -l __SP__UNK {} + | wc -l'|||
+b'find /usr/bin -type f -name __SP__UNK'|||b'find /usr/bin -type f | xargs -I {} echo {}'|||b'find /usr/bin -type f -iname __SP__UNK'|||
+b'find . -iname "*.c"'|||b'find . -type f -name "*.c"'|||b'find . -name \\*.c -print0 | xargs -0 -I {} grep -i -l __SP__UNK {}'|||
+b'find "$source_dir" -name __SP__UNK -print0'|||b'find __SP__UNK -name __SP__UNK -print0'|||b'find __SP__UNK -regextype posix-extended -regex __SP__UNK'|||
+b''|||b'find . -type f -name __SP__UNK | xargs -I {} grep __SP__UNK {}'|||b'find . -type f -name __SP__UNK -exec grep __SP__UNK {} \\;'|||
+b''|||b'find __SP__UNK -type f -iregex __SP__UNK -newer __SP__UNK -print0 | xargs -0 -I {} tar -r -v -f __SP__UNK {}'|||b'find __SP__UNK -type f -iregex __SP__UNK -mtime __SP__UNK -print0 | xargs -0 -I {} tar -r -v -f __SP__UNK {}'|||
+b''|||b"find . -maxdepth 1 -name '*.js' -not -path __SP__UNK"|||b"find . -name '*.js' -not -path __SP__UNK"|||
+b''|||b"echo __SP__UNK | grep -v __SP__UNK | tail -n 1 | cut -d ':' -f 1 | xargs -I {} echo {}"|||b'echo __SP__UNK | rev | cut -d "/" -f 1 | sort | uniq | xargs -I {} echo __SP__UNK {}'|||
+b''|||b'find -L __SP__UNK -type l -print0 | xargs -0 -n 1 -P 3 -I {} cp -t __SP__UNK {}'|||b'find -L __SP__UNK -type l -print0 | xargs -0 -I {} cp -a -v --target-directory=__SP__UNK --parents {}'|||
+b'find /home -type f -mtime -7 -print0 | xargs -0 -I {} tar -r -v -f __SP__UNK {}'|||b'find __SP__UNK -type f -mtime -7 -print0 | xargs -0 -I {} tar -r -v -f __SP__UNK {}'|||b'find /home -type f -mtime -7 -print0 | xargs -0 -I {} rm {}'|||
+b''|||b'find / -type l -print0 | xargs -0 -I {} echo {}'|||b'find / -type l -print0 | xargs -0 -I {} grep -l __SP__UNK {}'|||
+b''|||b'find . -type f -print0 | xargs -0 -I {} ls -l {}'|||b'find . -type f -print0 | xargs -0 -I {} grep -l __SP__UNK {}'|||
+b'find . -name __SP__UNK'|||b'find ./ -name __SP__UNK'|||b"find . -name '*.p[lm]'"|||
+b''|||b''|||b'find /path -type f -name "*.pdf" | grep -v __SP__UNK | xargs -I {} dirname {} | xargs -I {} echo {}'|||
+b''|||b'find . -type f -name "*.pdf" -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||b'find . -type f -name "*.pdf" -print0 | xargs -0 -I {} tar -r -v -f __SP__UNK {}'|||
+b'find __SP__UNK -name "*.pdf" -print0 | xargs -0 -I {} grep __SP__UNK {}'|||b'find __SP__UNK -type f -name "*.pdf" -print0 | xargs -0 -I {} grep __SP__UNK {}'|||b'find __SP__UNK -type f -name "*.pdf" -print0'|||
+b'find . -regex __SP__UNK'|||b'find ./ -regex __SP__UNK'|||b'find . -type f -name "*.php"'|||
+b''|||b"ps | grep __SP__UNK | grep -e __SP__UNK | grep -e __SP__UNK | cut -d ' ' -f 1 | grep -e __SP__UNK"|||b"ps | grep __SP__UNK | grep -e __SP__UNK | cut -d ' ' -f 1 | grep -e __SP__UNK | tail -n 1"|||
+b'find . -name __SP__UNK'|||b'find . -iname __SP__UNK'|||b'find . -name "*.js"'|||
+b''|||b'find . -type f -name __SP__UNK -exec ls -a -l {} \\; | tee __SP__UNK'|||b'find . -type f -name __SP__UNK -exec ls -a -l {} \\; | tee -a __SP__UNK'|||
+b'find / -perm __SP__UNK'|||b'find . -perm __SP__UNK'|||b'find / -perm /u=r'|||
+b'find . -type f | wc -l'|||b'find . -type f -exec wc -l {} \\;'|||b'find ./ -type f | wc -l'|||
+b''|||b'find . -type f \\( -name __SP__UNK -or -name __SP__UNK \\) -print0 | xargs -0 -I {} chmod __SP__UNK {}'|||b'find . -type f \\( -name __SP__UNK -or -name __SP__UNK \\) -type f -print0 | xargs -0 -I {} chmod __SP__UNK {}'|||
+b'find . -type f -perm 777'|||b'find . -type f -perm 777 -print'|||b'find . -type f -perm __SP__UNK'|||
+b'find __SP__UNK -type f -name __SP__UNK'|||b'find /root -type f -name __SP__UNK'|||b'find __SP__UNK -name __SP__UNK -type f'|||
+b''|||b'find / -type f -name __SP__UNK | xargs -I {} ls -l {}'|||b'find ~/container -mindepth 1 -type f | xargs -I {} ls -l {}'|||
+b"grep __SP__UNK __SP__UNK | cut -d ' ' -f 1 | xargs -I {} grep __SP__UNK {}"|||b'grep -r __SP__UNK __SP__UNK | xargs -I {} grep __SP__UNK {}'|||b"grep -r __SP__UNK __SP__UNK | cut -d ' ' -f 1 | xargs -I {} grep __SP__UNK {}"|||
+b''|||b"find / \\( -perm -4000 -fprintf /root/suid.txt '%#m %u %p\\n' \\) -and \\  \\( -perm -4000 -fprintf /root/suid.txt '%#m %u %p\\n' \\) -ls"|||b"find / \\( -perm -4000 -fprintf /root/suid.txt '%#m %u %p\\n' \\) -ls -type f -exec ls -l {} \\;"|||
+b'find . -L -type l'|||b'find -L . -type l'|||b'find . -type l -xtype l'|||
+b'find . -name "*.txt"'|||b'find . -name "*.txt" -print'|||b'find . -name ".txt"'|||
+b"find . -name '*.txt' -print0 | xargs -0 -I {} cp -t ~/foo/bar {}"|||b"find . -name '*.txt' -print0 | xargs -0 -I {} cp -a -v --target-directory=__SP__UNK --parents {}"|||b"find . -name '*.txt' -print0 | xargs -0 -I {} cp -a --target-directory=dir_txt/ --parents {}"|||
+b'find . -type f -name __SP__UNK'|||b'find . -type f -print0'|||b'find . -type f -exec ls -l {} \\;'|||
+b'find __SP__UNK -iname foo -type f'|||b'find . -iname "MyCProgram.c" -exec md5sum {} \\;'|||b'find . -iname "MyCProgram.c" -exec grep -i __SP__UNK {} \\;'|||
+b'find . -type f -exec ls -s {} \\; | sort -n -r | head - 5'|||b'find . -type f -exec ls -s {} \\; | sort -n | head - 5'|||b'find . -type f -exec grep __SP__UNK {} \\; -print'|||
+b'find . -type d -print0 | xargs -0 -I {} echo {}'|||b'echo $(find . -maxdepth 1 -type d -printf __SP__UNK)'|||b'find . -maxdepth 1 -type d -print0 | xargs -0 -I {} echo {}'|||
+b'find . -type d ! -perm -111'|||b'find /path/to/dir/ -mindepth 1 -type d ! -perm -111'|||b'find $dir -type d ! -perm -111'|||
+b''|||b'find . -mindepth 3 -type d -name __SP__UNK | xargs -I {} tar -r -v -f __SP__UNK {}'|||b'find . -mindepth 3 -type d -name __SP__UNK | xargs -I {} tar -c -v -f __SP__UNK {}'|||
+b'find /tmp/ -depth -name __SP__UNK -print0 | xargs -0 -I {} tar -r -v -f __SP__UNK {}'|||b'find /tmp/ -depth -name __SP__UNK -print0 | xargs -0 -I {} dirname {}'|||b'find . -name __SP__UNK | xargs -I {} dirname {} | xargs -I {} dirname {}'|||
+b'find __SP__UNK -mtime +1'|||b'find /tmp/test/* -mtime +1'|||b'find __SP__UNK -mtime +1 -print'|||
+b'find __SP__UNK -newer __SP__UNK'|||b'find __SP__UNK -newer __SP__UNK -print'|||b'find __SP__UNK -newer __SP__UNK -and -not -newer __SP__UNK'|||
+b'find . -type f'|||b'find . -type f -exec file {} \\;'|||b'find . -type f -print'|||
+b''|||b'find . | grep __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep'|||b'find . -name __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK'|||
+b'find /var/log/ -mtime +7 -mtime __SP__UNK'|||b'find /var/log/ -mtime +1 -type f'|||b'find /var/log/ -mtime +7 -type f'|||
+b''|||b'find __SP__UNK __SP__UNK -exec curl __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK \\;'|||b'find a __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK __SP__UNK'|||
+b''|||b'find . -name some_pattern -print0 | xargs -0 -I {} mv {} __SP__UNK'|||b'find . -name __SP__UNK -exec mv {} __SP__UNK \\;'|||
+b'find . -size __SP__UNK -print'|||b'find . -type f -size __SP__UNK'|||b'find . -size __SP__UNK -type f'|||
+b'find . -perm __SP__UNK'|||b'find . -type f -perm 0777 -print'|||b'find . -perm __SP__UNK -print'|||
+b'find ~ -name __SP__UNK'|||b'find ~/ -name __SP__UNK'|||b'find ~ -name game'|||
+b'find . -iname "MyCProgram.c"'|||b'find . -iname __SP__UNK'|||b'find ./ -iname __SP__UNK'|||
+b'find / -mmin __SP__UNK'|||b'find / -newerct __SP__UNK -mmin __SP__UNK -print'|||b'find / -mmin -10'|||
+b'find / -size +50M -size -100M'|||b'find / -size __SP__UNK'|||b'find / -size +50M -iname "filename"'|||
+b'du -B 1 | sort -n'|||b'du -b __SP__UNK'|||b'du -B __SP__UNK'|||
+b''|||b'find . -perm __SP__UNK -type f -exec ls -l {} \\;'|||b'find . -type f -perm __SP__UNK -exec ls -l {} \\;'|||
+b'find . -mtime -7 -type f | xargs -I {} tar -c -v -f __SP__UNK {}'|||b'find . -mtime 7 -name "*.html" -print | xargs -I {} tar -c -v -f __SP__UNK {}'|||b'find . -mtime -7 -type f | xargs -I {} tar -c -v -f myfile.tar {}'|||
+b'find . -type f -regex __SP__UNK'|||b'find . -type f \\( -name __SP__UNK -or -name "*.sh" \\)'|||b'find . -type f \\( -iname foo -or -iname foo \\)'|||
+b'find . -name __SP__UNK'|||b'find . -iname "MyCProgram.c"'|||b"find . -path '*/*config'"|||
+b'find . -inum __SP__UNK'|||b'find . -inum __SP__UNK -print'|||b'find . -inum __SP__UNK -exec ls -l {} \\;'|||
+b'find . -name __SP__UNK'|||b'find ./ -name __SP__UNK'|||b'find . -iname __SP__UNK'|||
+b''|||b'find / -mount \\( -name __SP__UNK -or -name __SP__UNK \\) -type f -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK'|||b'find / -mount \\( -name __SP__UNK -or -name __SP__UNK \\) -type f -print0 | xargs -0 -I {} tar -c -z -f __SP__UNK'|||
+b"find __SP__UNK -name '*.txt' -print0 | xargs -0 -I {} tar -c -z -v -f __SP__UNK {}"|||b"find __SP__UNK -name '*.txt' -print0 | xargs -0 -I {} grep -H __SP__UNK {}"|||b"find . -name '*.txt' -print0 | xargs -0 -I {} tar -c -z -v -f __SP__UNK {}"|||
+b'find . -lname __SP__UNK'|||b'find / -type l -lname __SP__UNK'|||b'find . -samefile __SP__UNK'|||
+b''|||b'find . -type f | xargs -I {} ls -l {}'|||b'find . -type f | xargs -I {} ls -l {} | tail -n 1'|||
+b'find . -type d -maxdepth 1 -print0 | xargs -0 -I {} rmdir {}'|||b'find . -type d -maxdepth 1 -name __SP__UNK -print0 | xargs -0 -I {} rm -r -f {}'|||b'find . -type d -maxdepth 1 -print0 | xargs -0 -I {} rm -r -f {}'|||
+b'find /dir/to/search/ -type f -name __SP__UNK'|||b'find /dir/to/search/ -type f -name __SP__UNK -print'|||b'find /dir/to/search/ -name __SP__UNK -type f -print'|||
+b'shopt -s __SP__UNK'|||b'shopt -u __SP__UNK'|||b'shopt | grep __SP__UNK'|||
+b'find . -name __SP__UNK'|||b'find . -type f -name __SP__UNK'|||b'find . -name __SP__UNK -print'|||
+b"find . -name \\*.php -type f -exec grep -H -n '$test' {} +"|||b"find . -name \\*.php -type f -exec grep -H -n '$test' {} \\;"|||b'find . -type f -name "*.php" -exec grep -i -l __SP__UNK {} \\;'|||
+b"find . -name '*.php'"|||b"find . -type f -name '*.php'"|||b'find . -type f -name "*.php"'|||
+b'find . -name __SP__UNK'|||b'find . -name __SP__UNK -print'|||b'find . \\( -name __SP__UNK -or -name __SP__UNK \\)'|||
+b'sort file1 file2 | uniq -u'|||b''|||b'join -j 1 file2 file1'|||
+b''|||b''|||b''|||
+b'ln -s -f -n __SP__UNK __SP__UNK'|||b'ln -s -f -n -n __SP__UNK __SP__UNK'|||b'ln -n -s -f -n __SP__UNK __SP__UNK'|||
+b'ln -s -f -n __SP__UNK __SP__UNK'|||b'ln -s -f -n -n __SP__UNK __SP__UNK'|||b'ln -n -s -f -n __SP__UNK __SP__UNK'|||
+b'find /tmp -type f -name __SP__UNK -exec rm -f {} \\;'|||b'find /tmp -type f -name __SP__UNK -print0 | xargs -0 -I {} rm {}'|||b'find /tmp -type f -name "* *" -exec rm -f {} \\;'|||
+b'echo __SP__UNK | column -t'|||b'echo __SP__UNK | column -t | column -t'|||b'echo "$line" | column -t | column -t'|||
+b'dig +short __SP__UNK __SP__UNK'|||b'dig TXT +short __SP__UNK __SP__UNK'|||b'dig -x __SP__UNK +short'|||
+b'seq 10 | sort | head -n 10'|||b'seq 10 | sort | uniq -c | sort -n'|||b'seq 10 | sort | sort -r | head -n 10'|||
+b'find /home -xdev -inum __SP__UNK | xargs -I {} ls {}'|||b'find /home -type f -inum __SP__UNK -exec ls -l {} \\;'|||b'find /home -xdev -inum __SP__UNK | xargs -I {} ls -l {}'|||
+b''|||b'ps -e -f | grep __SP__UNK'|||b'ps -e -f | grep __SP__UNK | grep -v __SP__UNK'|||
+b''|||b''|||b''|||
+b''|||b"dig __SP__UNK | grep __SP__UNK | cut -d ' ' -f 2 | grep -v __SP__UNK | grep -o __SP__UNK"|||b"dig __SP__UNK | grep __SP__UNK | cut -d ' ' -f 2 | grep -E -o __SP__UNK | grep -v __SP__UNK"|||
+b''|||b'ifconfig eth0 | grep -o -P __SP__UNK'|||b"ifconfig eth0 | grep -o -E __SP__UNK | cut -d ' ' -f 1 | rev"|||
+b''|||b''|||b'tail -n __SP__UNK __SP__UNK | head -n 5 | tail -n 5 | tail -n 5'|||
+b'cd $(cat __SP__UNK)'|||b'cd $(echo __SP__UNK | split -l 500 - __SP__UNK)'|||b'cd $(find . -name __SP__UNK -print0 | xargs -0 -n 1 -I {} dirname {})'|||
+b'cd -'|||b''|||b'cd $(find /tmp -type d | xargs -I {} dirname {})'|||
+b'cd __SP__UNK'|||b''|||b'cd $(find . -name __SP__UNK -print0 | xargs -0 -n 1 -P 4 -I {} dirname {})'|||
+b'cd -'|||b''|||b'cd $(find . -name "* *" -type d | xargs -I {} dirname {})'|||
+b''|||b'find __SP__UNK -type f -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||b'find __SP__UNK -type d -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||
+b''|||b''|||b''|||
+b'jobs -p | xargs -I {} kill {}'|||b'jobs -p | xargs -I {} echo {}'|||b'jobs -p | xargs -I {} jobs -p {}'|||
+b"echo __SP__UNK | rev | cut -d ' ' -f 2 | rev"|||b"echo __SP__UNK | rev | cut -d ' ' -f 2 | rev | cut -d ' ' -f 2 | rev"|||b'echo __SP__UNK | rev | cut -d "/" -f 2 | rev | cut -d \' \' -f 2 | rev'|||
+b''|||b"find __SP__UNK -name '*.txt' -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}"|||b"find __SP__UNK -name __SP__UNK -or -name '*.txt' -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}"|||
+b''|||b'mount | cut -d / -f 50 | xargs -I {} ls -l {}'|||b'find / -type f -iwholename "*/wp-includes/version.php" -exec ls -l {} \\;'|||
+b'env | grep __SP__UNK'|||b'env | cut -d / -f 1 | tr -s \' \' | cut -d ":" -f 1 | grep -E -o __SP__UNK'|||b'env | cut -d . -f 1'|||
+b'env | grep __SP__UNK'|||b'env | grep -i __SP__UNK'|||b'env | grep __SP__UNK | cut -f 1 -d " "'|||
+b'find . -ls'|||b'find . -print0 | xargs -0 -I {} ls {}'|||b'find . -exec ls {} \\;'|||
+b''|||b'find . -path __SP__UNK -prune -or \\( -name __SP__UNK -or -name __SP__UNK \\) -print0 | xargs -0 -I {} grep __SP__UNK {}'|||b"find . -name '*.js' | grep -v excludeddir | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK"|||
+b''|||b'find . -type f \\( -name __SP__UNK -or -name __SP__UNK \\) -print0 | xargs -0 -n 1 -P 4 -I {} echo {}'|||b'find . -type f \\( -name __SP__UNK -or -name __SP__UNK \\) -print0 | xargs -0 -I {} ls -l {}'|||
+b''|||b'find __SP__UNK -type f -print0 | xargs -0 -I {} ls -l {}'|||b'find __SP__UNK -type f -print0 | xargs -0 -r -I {} ls -l {}'|||
+b'find . -name __SP__UNK -exec ls -l {} \\;'|||b'find . -name __SP__UNK -print0 | xargs -0 -I {} ls -l {}'|||b'find . \\( -name __SP__UNK -or -name __SP__UNK \\) -exec ls {} \\;'|||
+b'ls -l | grep __SP__UNK'|||b'find . -type f -exec ls -l {} \\;'|||b'ls -l $(cat __SP__UNK)'|||
+b'find __SP__UNK -name __SP__UNK -exec ls -l {} \\;'|||b'find __SP__UNK -name __SP__UNK -print0 | xargs -0 -I {} ls {}'|||b'find __SP__UNK -name __SP__UNK'|||
+b'find / -perm /g=s'|||b'find / -perm __SP__UNK'|||b'find / -perm +2000'|||
+b'find . -type d | xargs -I {} ls -l {}'|||b'find . -type d | xargs -I {} ls -d {}'|||b'find . -type d'|||
+b''|||b''|||b''|||
+b'find . -size __SP__UNK -print'|||b'find . -size __SP__UNK'|||b'find . -size __SP__UNK -exec ls -l {} \\;'|||
+b'find . -maxdepth 1 -type f -print0 | xargs -0 -I {} ls -l {}'|||b'find . -type f | xargs -I {} ls -l {}'|||b'find . -mindepth 1 -maxdepth 1 -type f -print0 | xargs -0 -I {} ls -l {}'|||
+b'find . -size __SP__UNK'|||b'find . -size __SP__UNK -print'|||b'find . -size +10M -exec ls -l -h {} \\;'|||
+b''|||b'find __SP__UNK -type f \\( -mtime ${FTIME} -or -atime ${FTIME} -or -atime ${FTIME} -or -atime ${FTIME} \\) -exec rm {} \\;'|||b'find __SP__UNK -type f \\( -mtime ${FTIME} -or -atime ${FTIME} -or -atime ${FTIME} \\) -print0 | xargs -0 -I {} rm {}'|||
+b'ls -l __SP__UNK'|||b'find . -type f \\( -name __SP__UNK -or -name __SP__UNK -or -name __SP__UNK \\) -exec ls {} \\;'|||b'find . -type f \\( -name __SP__UNK -or -name __SP__UNK \\) -exec ls {} \\;'|||
+b''|||b'find . -type f -exec du -S -h {} + | sort -n -r | head - 1'|||b'find . -type f -exec du -S -h {} + | sort -n | head - 1'|||
+b'find __SP__UNK -type f -printf __SP__UNK'|||b'find __SP__UNK -type f -mtime 0 -ls'|||b'find __SP__UNK -type f -mtime 0 -exec ls -l {} \\;'|||
+b'find . -empty -exec ls {} \\;'|||b'find . -type f -empty'|||b'find . -empty -print0 | xargs -0 -I {} ls {}'|||
+b''|||b'find . -type f -exec ls -s {} \\; | sort -n | head - 1'|||b'find . -type f -exec ls -s {} \\; | sort -n | head -n 1'|||
+b''|||b"find __SP__UNK -name __SP__UNK -printf '%h\\n' | sort -u"|||b'find __SP__UNK -type f -name __SP__UNK -printf __SP__UNK | sort | uniq -c | sort -n -r'|||
+b'cat __SP__UNK | sort | uniq -c | sort -n -r'|||b'ls | grep -o __SP__UNK | sort | uniq -c | sort -n'|||b'sort __SP__UNK | uniq -c | sort -n'|||
+b'find . ! -name __SP__UNK'|||b'find . -not -name __SP__UNK'|||b'find . -maxdepth 1 -not -name __SP__UNK'|||
+b'find /var/www -type f -name __SP__UNK'|||b'find /var/www -type f -name __SP__UNK -print0'|||b'find /var/www -type f -name __SP__UNK -exec ls -l {} \\;'|||
+b'su -l'|||b'su -l __SP__UNK'|||b'ssh -l __SP__UNK hostname'|||
+b'su -l'|||b'su git'|||b'su -'|||
+b''|||b'ssh -o __SP__UNK __SP__UNK'|||b''|||
+b'grep __SP__UNK $(uname -r)'|||b'md5sum __SP__UNK'|||b'find . -name __SP__UNK | xargs -I {} grep __SP__UNK {}'|||
+b'mkdir -p $(pwd -P)'|||b'mkdir -p $(pwd)'|||b'mkdir a b c d __SP__UNK'|||
+b''|||b'find . -type d -print0 | xargs -0 -I {} mkdir -p {}'|||b'find . -type d -exec mkdir -p -- __SP__UNK \\;'|||
+b'mkdir -p __SP__UNK'|||b'mkdir -p $(dirname __SP__UNK)'|||b''|||
+b'mkdir -p __SP__UNK'|||b'mkdir -p $(dirname __SP__UNK)'|||b'mkdir -p -- $(dirname __SP__UNK)'|||
+b''|||b'find __SP__UNK -type f -exec chmod +x {} \\;'|||b'find __SP__UNK -type f -exec chmod __SP__UNK {} \\;'|||
+b'find . -type d -name ".*" -exec ls -l {} \\;'|||b"find . -name '.?*' -prune -or -type d -print0 | xargs -0 -I {} ls -l {}"|||b"find . -name '.?*' -prune -or -type d -print0 | xargs -0 -I {} ls {}"|||
+b''|||b"finger | cut -d ' ' -f 1 | sort | uniq | xargs -I {} echo {}"|||b"finger | cut -d ' ' -f 1 | sort | uniq | xargs -I {} rm {}"|||
+b''|||b''|||b''|||
+b'paste -s -d ","'|||b'paste -d , -s'|||b'paste -d , -s ","'|||
+b''|||b'paste -s -d : __SP__UNK'|||b''|||
+b'mount -t __SP__UNK none /proc'|||b'mount -t __SP__UNK none __SP__UNK'|||b'mount -t __SP__UNK -o __SP__UNK __SP__UNK __SP__UNK'|||
+b'mount -t __SP__UNK'|||b'mount -a __SP__UNK'|||b'mount __SP__UNK'|||
+b'mv __SP__UNK __SP__UNK'|||b'mv __SP__UNK $(which __SP__UNK)'|||b''|||
+b'mv __SP__UNK __SP__UNK'|||b'mv __SP__UNK $(find /var/www/ -name __SP__UNK)'|||b'mv __SP__UNK $(find __SP__UNK -name __SP__UNK)'|||
+b''|||b''|||b''|||
+b''|||b'find . -type d -name CVS -print0 | xargs -0 -I {} mv -t __SP__UNK {}'|||b'find . -type d -name CVS -prune -or -print0 | xargs -0 -I {} mv -t __SP__UNK {}'|||
+b'mv * __SP__UNK | xargs -I {} mv {} __SP__UNK'|||b''|||b''|||
+b'mv __SP__UNK __SP__UNK'|||b'find . -name some_pattern -print0 | xargs -0 -I {} mv {} target_location'|||b'find . -type f -name __SP__UNK -exec mv {} __SP__UNK \\;'|||
+b'sort -n -r __SP__UNK'|||b'sort -n -r -n'|||b'sort -n -r -k __SP__UNK __SP__UNK'|||
+b'sort -n __SP__UNK | uniq -c'|||b'tac temp.txt | sort -k 2,2 -r -u'|||b''|||
+b''|||b'find . -type f -print0 | xargs -0 -I {} echo {} | xargs -I {} echo {}'|||b'find . -type f -exec ls -s {} \\; | sort -n | tail - 1 | cut -f 2- -d " "'|||
+b"echo __SP__UNK | rev | cut -d ' ' -f 2 | rev"|||b"echo __SP__UNK | rev | cut -d ' ' -f 2 | tail -n 2"|||b"echo __SP__UNK | rev | cut -d ' ' -f 2 | tail - 2"|||
+b''|||b'find . -type d -exec ls -s {} \\; | sort -n | tail - 1'|||b'find . -type f -exec ls -s {} \\; | sort -n | tail - 1 | cut -f 2- -d " "'|||
+b''|||b''|||b''|||
+b'yes | rm'|||b'yes | grep __SP__UNK | xargs -I {} mv {} __SP__UNK'|||b'yes | mv ...'|||
+b''|||b'seq 2000 __SP__UNK | tee __SP__UNK'|||b'seq 2000 __SP__UNK | nl -s __SP__UNK -w __SP__UNK | tee __SP__UNK'|||
+b'find /home/*/public_html/ -type f -iwholename "*/wp-includes/version.php" -exec grep -H "\\$wp_version =" {} \\;'|||b'find /home/*/public_html/ -type f -iwholename "*/wp-includes/version.php" -exec ls -s {} \\; | sort -n -r | head -n 1'|||b'gzip -d -c __SP__UNK'|||
+b'cat __SP__UNK | xargs -I {} ping {}'|||b'cat __SP__UNK | xargs -n 1 -I {} ping {}'|||b'cat __SP__UNK | ssh __SP__UNK'|||
+b''|||b''|||b'ping __SP__UNK -c 1 | grep -o __SP__UNK | grep -E -o __SP__UNK | head -n __SP__UNK'|||
+b''|||b'ping -c 1 __SP__UNK | tee -a __SP__UNK'|||b'ping __SP__UNK -I __SP__UNK -c 1 | tee -a __SP__UNK'|||
+b'echo __SP__UNK | tee --append /etc/apt/sources.list'|||b'echo __SP__UNK | tee __SP__UNK'|||b'echo __SP__UNK | tee -a __SP__UNK'|||
+b'df /full/path | grep -q /full/path'|||b"df /full/path | cut -d ' ' -f 1 | tail -n 1"|||b"df /full/path | cut -d ' ' -f 1 | cut -d ' ' -f 1"|||
+b''|||b"ping -c 1 __SP__UNK | grep -E -o __SP__UNK | cut -d ' ' -f 1 | cut -d ' ' -f 1"|||b"ping -c 1 __SP__UNK | cut -d ' ' -f 1 | cut -d ' ' -f 1 | tail -n 1"|||
+b'find . -name file -okdir echo __SP__UNK \\;'|||b'find . -name file -printf __SP__UNK'|||b'find . -name file -okdir rename __SP__UNK {} \\;'|||
+b'sort __SP__UNK | uniq -c | sort -n'|||b'sort -n __SP__UNK | uniq -c'|||b'sort __SP__UNK | uniq -c | sort -n -r'|||
+b''|||b'echo __SP__UNK | od -A n -t x1 | od -t x1'|||b'echo __SP__UNK | od -A n -t x1 | tr -d __SP__UNK'|||
+b''|||b'echo __SP__UNK | od -A n -t x1'|||b'od -t __SP__UNK __SP__UNK'|||
+b'seq -s 100 100 | tr -d __SP__UNK'|||b''|||b'seq -s 100 100 | head -n 1'|||
+b''|||b'find __SP__UNK -name __SP__UNK -print0 | xargs -0 -I {} echo {}'|||b'find __SP__UNK -name __SP__UNK -print0 | xargs -0 -n 1 -I {} echo {}'|||
+b'find __SP__UNK -type f | env -i __SP__UNK sort'|||b'find __SP__UNK -type f | xargs -I {} ls -l {}'|||b'find __SP__UNK -type f | sort'|||
+b"find ~/ -name '.*' -exec echo {} \\;"|||b'find ~/ -name ".*" -exec echo {} \\;'|||b'find ~ -type f -name ".*" -exec ls -l {} \\;'|||
+b'seq 2000 __SP__UNK | sort -R | head -n 1'|||b'seq 2000 __SP__UNK | sort -n | head -n 1'|||b'seq 2000 __SP__UNK | sort -n | tail -n 1'|||
+b'seq 2000 __SP__UNK | sort -R | head -n 1'|||b'seq 1 100 | sort -R | head -n 1'|||b'seq 1 10000 | sort -R | head -n 1'|||
+b''|||b"ls -l | grep __SP__UNK | sort | uniq -d | cut -d ' ' -f 1 | sort | uniq"|||b"ls -l | grep __SP__UNK | sort | uniq -d | cut -d ' ' -f 1 | sort -u"|||
+b'readlink -f __SP__UNK'|||b'readlink -f $(readlink -f __SP__UNK)'|||b'readlink -f $(which __SP__UNK)'|||
+b"echo -n __SP__UNK | cut -d ' ' -f 1"|||b'yes | head - __SP__UNK'|||b"echo __SP__UNK | cut -d ' ' -f 1"|||
+b'find __SP__UNK -size __SP__UNK'|||b'find __SP__UNK -size __SP__UNK -print'|||b'find __SP__UNK -size __SP__UNK -printf __SP__UNK'|||
+b'cat __SP__UNK | xargs -I {} grep -l __SP__UNK {}'|||b'cat __SP__UNK | xargs -n 1 -I {} grep -l __SP__UNK {}'|||b'cat __SP__UNK | xargs -I {} grep __SP__UNK {}'|||
+b''|||b"tail -f __SP__UNK | grep --line-buffered __SP__UNK | cut -d ' ' -f 4 | xargs -n 1 -I {} echo {}"|||b"tail -f __SP__UNK | grep --line-buffered __SP__UNK | cut -d ' ' -f 2 | grep -v __SP__UNK | grep -v __SP__UNK"|||
+b'ping -c 5 -q __SP__UNK | tail -n 5'|||b'ping -c 5 google.com | grep -o __SP__UNK | tail -n 5'|||b'ping -c 5 -q __SP__UNK | tee -a __SP__UNK'|||
+b'pwd | grep -o __SP__UNK'|||b'pwd | cut -b 2- | tail - 1 | cut -b 2- | tail - 1'|||b"pwd | cut -b 2- | tail - 1 | cut -f 1 -d '/'"|||
+b"echo __SP__UNK | rev | cut -d '/' -f 1 | rev"|||b"echo __SP__UNK | tr ' ' '\\n' | rev | cut -d '/' -f 1 | rev"|||b"echo __SP__UNK | rev | cut -d ' ' -f 1 | rev"|||
+b'echo __SP__UNK $(cal __SP__UNK __SP__UNK)'|||b"cal -h 2009 | cut -d ' ' -f 1 | rev"|||b''|||
+b''|||b''|||b''|||
+b''|||b''|||b''|||
+b''|||b'cat __SP__UNK | tee __SP__UNK'|||b'ping __SP__UNK -I __SP__UNK -c 1 | cat - __SP__UNK | tee -a __SP__UNK'|||
+b'cat __SP__UNK'|||b''|||b''|||
+b'cat file | paste -s -d __SP__UNK file'|||b'cat file | paste -s -d __SP__UNK -'|||b"cat file | paste -d ' ' - file"|||
+b'cat __SP__UNK'|||b'cat 1'|||b'cat $(cat __SP__UNK)'|||
+b''|||b"finger | cut -d ' ' -f 4 | xargs -I {} du -c -h {} | tail -n 1"|||b"df | grep __SP__UNK | cut -d ' ' -f 4 | xargs -I {} du -c -h {} | tail -n 1"|||
+b'tree -s'|||b'find . -type f -perm 644 -exec ls -l {} \\;'|||b'find . -perm 644 -type f -exec ls -l {} \\;'|||
+b'echo $(whoami)'|||b''|||b'echo -n -e $(whoami)'|||
+b''|||b'cal -h | cut -c __SP__UNK | tail -n 1 | cut -c 2- | tail -n 1'|||b''|||
+b'paste -s -d __SP__UNK __SP__UNK'|||b'cat __SP__UNK | fold -w __SP__UNK | head -n 1'|||b'echo -n __SP__UNK | fold -w __SP__UNK | head -n 1'|||
+b"echo __SP__UNK | rev | cut -d ' ' -f 1 | rev"|||b"echo __SP__UNK | cut -d ' ' -f 1"|||b"echo -n __SP__UNK | rev | cut -d ' ' -f 1 | rev"|||
+b'paste -s -d : __SP__UNK'|||b'paste -s -d __SP__UNK __SP__UNK'|||b"cat __SP__UNK | tr -s ' ' | tr ' ' '\\n' | column -t"|||
+b''|||b''|||b'tail - 1 <(sort __SP__UNK)'|||
+b'cat __SP__UNK'|||b'cat $(which __SP__UNK)'|||b'cat __SP__UNK | cat'|||
+b'cat $(which __SP__UNK)'|||b'cat myfile'|||b'cat $(which java)'|||
+b"find . -type f -printf __SP__UNK | sort | tail -n 1 | cut -d ' ' -f 1 | rev"|||b'cat $file | cut -d . -f 1'|||b'find . -type f -printf __SP__UNK | sort | tail -n 1 | cut -c 2- | rev'|||
+b'du -k -s -h * | sort -h -r'|||b'du -h --max-depth=2 | sort -h -r'|||b'du -k -s -h * | sort -n -r'|||
+b''|||b'find . -type f -exec ls -s {} \\; | sort -n | head - 1'|||b'find . -type f -print0 | xargs -0 -n 1 -I {} echo {}'|||
+b'find [whatever] -print0 | xargs -0 -I {} echo {}'|||b"echo __SP__UNK | tr -s ' ' | cut -d ' ' -f 1"|||b"echo -n __SP__UNK | tr -s ' ' | cut -d ' ' -f 1"|||
+b'cat /dev/urandom | tr -d -c __SP__UNK'|||b'cat /dev/urandom | fold -w __SP__UNK | head -n 1'|||b'cat /dev/urandom | tr -d -c __SP__UNK | fold -w 100 | head -n 1'|||
+b'tail - 1 <(sort __SP__UNK)'|||b'head - 1 <(sort __SP__UNK)'|||b"cat __SP__UNK | head - 1 | cut -d ' ' -f 5"|||
+b'which __SP__UNK'|||b'which __SP__UNK | xargs -I {} which __SP__UNK {}'|||b'which __SP__UNK | xargs -I {} which {}'|||
+b'which __SP__UNK'|||b'which __SP__UNK | xargs -I {} which __SP__UNK {}'|||b'which __SP__UNK | xargs -I {} which {}'|||
+b'which __SP__UNK'|||b'which __SP__UNK | xargs -I {} which __SP__UNK {}'|||b'which __SP__UNK | xargs -I {} which {}'|||
+b'ls $(pwd)'|||b'echo __SP__UNK $(pwd)'|||b''|||
+b'ls $(pwd)'|||b'find . -type f -exec ls -s {} \\; | sort -n -r | head - 1'|||b'find . -type f -exec ls -s {} \\; | sort -n | tail - 1 | cut -f 1 -d " "'|||
+b''|||b'cat __SP__UNK | xargs -n 1 -I {} cp --help {}'|||b'cat __SP__UNK | xargs -n 1 -I {} echo {}'|||
+b''|||b"hostname | cut -d ' ' -f 1"|||b'hostname -I'|||
+b'cat __SP__UNK | xargs -I {} cat {} | tail -n 1'|||b'cat __SP__UNK | xargs -I {} cat {} | tail - 1'|||b'tail -n __SP__UNK __SP__UNK'|||
+b''|||b''|||b'echo __SP__UNK | tail - 1 | tail - 1 | cut -f 1 -d " "'|||
+b'find . -type f'|||b'find . -type f | xargs -I {} ls -l {}'|||b'find . -type f | xargs -I {} echo {}'|||
+b''|||b'ls -h -a -l /root/ | tee __SP__UNK'|||b'ls -h -a -l / | tee -a __SP__UNK'|||
+b''|||b"echo __SP__UNK | rev | cut -d ' ' -f 1 | rev"|||b''|||
+b''|||b'cat __SP__UNK | head -n __SP__UNK | head -n 1'|||b'cat __SP__UNK | head -n __SP__UNK | head -n __SP__UNK'|||
+b''|||b'find __SP__UNK -type f -printf __SP__UNK | sort -n | tail - 1 | cut -f 2- -d " "'|||b"find __SP__UNK -name __SP__UNK | rev | cut -d ' ' -f 1 | rev | cut -d ' ' -f 1 | rev"|||
+b'cat __SP__UNK | xargs -r -I {} cat {}'|||b'cat __SP__UNK | xargs -r -I {} cat {} | xargs -I {} echo {}'|||b'cat __SP__UNK | xargs -I {} echo {}'|||
+b'find __SP__UNK -maxdepth 0 -type d'|||b'find __SP__UNK -type d -exec dirname {} \\;'|||b'find __SP__UNK -type d -print0 | xargs -0 -I {} dirname {} | xargs -I {} dirname {}'|||
+b'pwd -P'|||b'echo $(pwd)'|||b'pwd | grep -o __SP__UNK'|||
+b''|||b'ps -e -f | grep -v | grep -o __SP__UNK | cut -d : -f 1 | cut -d " " -f 4'|||b'top -b -n 1 | cut -d \' \' -f 1 | cut -d : -f 1 | cut -d " " -f 4'|||
+b''|||b'pstree -s __SP__UNK'|||b'pstree | cat'|||
+b'echo __SP__UNK | rev | cut -d "/" -f 1 | rev'|||b'echo __SP__UNK | rev | cut -d "/" -f 1 | rev | cut -d "/" -f 1 | rev'|||b"echo __SP__UNK | rev | cut -d ' ' -f 1 | rev"|||
+b"cut -d ' ' -f 2 | cut -d ' ' -f 2"|||b"cut -d ' ' -f 2 | cut -d ' ' -f 2 | cut -d ' ' -f 2"|||b"cut -d ' ' -f 2 | cut -d ' ' -f 2 | cut -d ' ' -f 2 | cut -d ' ' -f 2"|||
+b'tail - 1 <(sort __SP__UNK)'|||b''|||b''|||
+b'dig __SP__UNK __SP__UNK __SP__UNK'|||b"echo __SP__UNK | cut -d '.' -f 2"|||b"echo __SP__UNK | rev | cut -d ' ' -f 2 | rev"|||
+b'diff --brief --recursive dir1/ dir2/'|||b'diff -r -q dir1 dir2 | grep __SP__UNK'|||b'diff -r -q dir1 dir2'|||
+b'touch -d __SP__UNK'|||b''|||b'touch -d $(cat __SP__UNK)'|||
+b'find __SP__UNK -type d -print0 | xargs -0 -I {} rmdir {}'|||b'find __SP__UNK -type d -exec rmdir {} \\;'|||b'find __SP__UNK -type d -print0 | xargs -0 -n 1 -I {} rmdir {}'|||
+b"du -k -s -h | cut -d ' ' -f 1 | tail -n 1"|||b"df -k | tail -n 1 | cut -d ' ' -f 1 | tail -n 1"|||b"df -k | tail - 1 | cut -d ' ' -f 1 | tail -n 1"|||
+b'comm -2 -3 __SP__UNK __SP__UNK'|||b''|||b''|||
+b'diff -a -r -q folder1 folder2'|||b'diff -q -r dir1/ dir2/'|||b'diff -q -r __SP__UNK __SP__UNK'|||
+b''|||b"$(echo __SP__UNK | rev | cut -d ' ' -f 2- | rev | cut -d ' ' -f 1 | rev)"|||b''|||
+b'read -r -p __SP__UNK __SP__UNK'|||b'read -r -n 1 -p __SP__UNK __SP__UNK'|||b'read -e -p __SP__UNK -i __SP__UNK __SP__UNK'|||
+b'read -a __SP__UNK'|||b'read __SP__UNK'|||b''|||
+b'read -p __SP__UNK'|||b'read -p __SP__UNK text'|||b'read -p __SP__UNK __SP__UNK'|||
+b'read -r -p __SP__UNK __SP__UNK'|||b'read -r __SP__UNK -p __SP__UNK __SP__UNK'|||b'read -r -n 1 -p __SP__UNK __SP__UNK'|||
+b'read -p __SP__UNK __SP__UNK'|||b'read -p __SP__UNK -r __SP__UNK'|||b''|||
+b'read -p __SP__UNK __SP__UNK'|||b'read -p __SP__UNK choice'|||b'read -p __SP__UNK -i __SP__UNK __SP__UNK'|||
+b'read -p __SP__UNK __SP__UNK'|||b'read -p __SP__UNK choice'|||b'read -p __SP__UNK -i __SP__UNK __SP__UNK'|||
+b'read -p __SP__UNK __SP__UNK'|||b'read -p __SP__UNK choice'|||b'read -p __SP__UNK -i __SP__UNK __SP__UNK'|||
+b'dig +short __SP__UNK __SP__UNK'|||b'curl __SP__UNK __SP__UNK __SP__UNK'|||b'read -r -d __SP__UNK __SP__UNK'|||
+b'cat /dev/urandom | tr -d __SP__UNK | tr -d __SP__UNK'|||b'cat /dev/urandom | tr -d __SP__UNK'|||b'read -a __SP__UNK'|||
+b'history -a'|||b'history -r'|||b'history -r __SP__UNK'|||
+b''|||b'chown -R __SP__UNK __SP__UNK'|||b'chown -R root:root __SP__UNK'|||
+b'chown -R __SP__UNK __SP__UNK'|||b'chown -R __SP__UNK 775 __SP__UNK'|||b'chown __SP__UNK -R __SP__UNK'|||
+b'chown -R __SP__UNK __SP__UNK'|||b'chown -R www-data __SP__UNK __SP__UNK __SP__UNK'|||b'chown -R __SP__UNK __SP__UNK temp __SP__UNK work __SP__UNK'|||
+b'scp -r __SP__UNK'|||b'scp -r __SP__UNK __SP__UNK'|||b'rsync -r -a -v --rsync-path=__SP__UNK __SP__UNK __SP__UNK'|||
+b'scp -r __SP__UNK __SP__UNK'|||b'scp -v __SP__UNK __SP__UNK'|||b'scp -f __SP__UNK __SP__UNK'|||
+b"find dir/ -name '*.txt' | xargs -I {} cp -a -v --target-directory=dir_txt/ --parents {}"|||b"find dir/ -name '*.txt' | xargs -I {} cp -a -v --target-directory=__SP__UNK --parents {}"|||b''|||
+b'find . -name "*.pdf" -print0 | xargs -0 -I {} rm {}'|||b'find . -name "*.pdf" -exec rm -r -f {} \\;'|||b'find . -name "*.pdf" -exec rm {} \\;'|||
+b''|||b"find . -type f -not -path '*/\\.*' | xargs -I {} bzip2 {}"|||b"find . -type f -not -name '*.gz' | xargs -I {} bzip2 {}"|||
+b'find . -type d -print0 | xargs -0 -I {} grep -l __SP__UNK {}'|||b'find . -type f -print0 | xargs -0 -I {} grep -l __SP__UNK {}'|||b'find . -type f -print0 | xargs -0 -I {} grep -l -i __SP__UNK {}'|||
+b'find __SP__UNK -type f | xargs -I {} bzip2 {}'|||b'find __SP__UNK -type f -exec gzip {} \\;'|||b'find __SP__UNK -type f | xargs -I {} gzip -9 {}'|||
+b'grep -r -n -w __SP__UNK -e "pattern"'|||b"grep -r -n -w __SP__UNK -e 'pattern'"|||b'find . -name __SP__UNK | xargs -I {} grep __SP__UNK {}'|||
+b"find . -name '*.py' | xargs -I {} tar -r -v -f __SP__UNK {}"|||b"find . -name '*.py' | xargs -I {} ls -l {}"|||b'find . -name .svn -print0 | xargs -0 -I {} tar -r -v -f __SP__UNK {}'|||
+b''|||b'find . -type f -printf __SP__UNK | sort | uniq -c | sort -n -r'|||b'find . -type f -printf __SP__UNK | sort | sort -n | head -n 1'|||
+b'mv __SP__UNK __SP__UNK'|||b''|||b''|||
+b'rm -r -f $(find . -name __SP__UNK)'|||b'find . -name "*.pyc" | xargs -I {} rm -r -f {}'|||b''|||
+b'chmod -R 777 __SP__UNK'|||b'chmod 777 -R __SP__UNK'|||b'chmod 777 -R 777 __SP__UNK'|||
+b'chmod 755 -R __SP__UNK'|||b'chmod -R 755 __SP__UNK'|||b'chmod 755 $(find /path/to/base/dir -type f)'|||
+b''|||b"~ | tr -s ' ' | cut -d ' ' -f 1 | sort | uniq | xargs -I {} echo {}"|||b"finger | cut -d ' ' -f 1 | sort | uniq | xargs -I {} tar -c -v -f __SP__UNK {}"|||
+b''|||b'echo __SP__UNK | tee -a __SP__UNK'|||b'echo __SP__UNK | tee __SP__UNK'|||
+b'mount / -o __SP__UNK'|||b"find / \\( -perm -4000 -fprintf /root/suid.txt '%#m %u %p\\n' \\) -and \\( -perm -4000 -fprintf /root/suid.txt '%#m %u %p\\n' \\) -and \\  -perm -4000 -print"|||b"find / \\( -perm -4000 -fprintf /root/suid.txt '%#m %u %p\\n' \\) -and \\( -perm -4000 -fprintf /root/suid.txt '%#m %u %p\\n' \\) -and -perm -4000 -print"|||
+b''|||b''|||b''|||
+b''|||b'mount -o __SP__UNK -t __SP__UNK __SP__UNK __SP__UNK'|||b'mount -o __SP__UNK __SP__UNK __SP__UNK -o __SP__UNK'|||
+b'find . -name __SP__UNK -exec rm {} \\;'|||b'find . -name __SP__UNK -ok rm {} \\;'|||b'find . -type f -name __SP__UNK -exec rm -f {} \\;'|||
+b'find . -name __SP__UNK -exec rm {} \\;'|||b'find . -name __SP__UNK | xargs -I {} rm -f {}'|||b'find . -name "*.pyc" | xargs -I {} rm -f {}'|||
+b'find . -type d -exec rm -r -f {} \\;'|||b'find . -type d | xargs -I {} rm {}'|||b'find . -type d -print0 | xargs -0 -I {} rm -r -f {}'|||
+b'find /foo/bar -type d -print0 | xargs -0 -I {} rmdir {}'|||b'find /foo/bar -type d -exec rmdir {} \\;'|||b'rm -r -f __SP__UNK'|||
+b'find __SP__UNK -type d -empty -exec rmdir {} \\;'|||b'find __SP__UNK -type d -depth -empty -exec rmdir {} \\;'|||b'find __SP__UNK -depth -type d -print0 | xargs -0 -I {} rmdir {}'|||
+b'find __SP__UNK -type f -exec rm {} \\;'|||b'find __SP__UNK -type f -exec rm {} +'|||b'find __SP__UNK -type f -print0 | xargs -0 -I {} rm {}'|||
+b'ls -d __SP__UNK'|||b'cat __SP__UNK | xargs -I {} rm {}'|||b'cat __SP__UNK | xargs -r -I {} rm {}'|||
+b'rmdir __SP__UNK'|||b'rm -d __SP__UNK'|||b'rm -d __SP__UNK __SP__UNK'|||
+b'rm -r -f __SP__UNK'|||b'rm -r -f *'|||b'rm -r __SP__UNK'|||
+b'rm -f __SP__UNK'|||b'rm -r -f __SP__UNK'|||b'rm -f __SP__UNK __SP__UNK __SP__UNK'|||
+b''|||b"echo __SP__UNK | rev | cut -d '/' -f 3- | rev"|||b"echo __SP__UNK | rev | cut -d '/' -f 4- | rev"|||
+b'echo __SP__UNK | rev | cut -c 4- | rev'|||b'echo $filename | rev | cut -c 4- | rev'|||b'echo $filename | rev | cut -c 4- | rev | rev | cut -c 4- | rev'|||
+b'basename -- $(dirname -- "$path")'|||b"echo $path | rev | cut -d '/' -f 4- | rev | cut -d '/' -f 4- | rev"|||b"echo __SP__UNK | rev | cut -d '/' -f 4- | xargs -I {} dirname {} | xargs -I {} dirname {}"|||
+b''|||b'find . -type f -exec basename {} \\; | tr \\\\n __SP__UNK | xargs -0 -I {} rm {}'|||b'find . -type f -exec rmdir {} \\; | tr \\\\n __SP__UNK | xargs -0 -I {} rm {}'|||
+b''|||b'find . -name *.jpg -exec rename __SP__UNK {} \\;'|||b'find . -name "*.jpg" -exec rename __SP__UNK {} \\;'|||
+b''|||b'find __SP__UNK -name "*.jpg" -print0 | xargs -0 -I {} rename __SP__UNK {}'|||b'find __SP__UNK -name "*.jpg" -type f -print0 | xargs -0 -I {} rename __SP__UNK {}'|||
+b''|||b"find . -type f -name '*.txt' -print0 | xargs -0 -I {} rename __SP__UNK {}"|||b'find . -type f -name "*.txt" -print0 | xargs -0 -I {} rename __SP__UNK {}'|||
+b'mv "$2" $(dirname $1)'|||b'mv __SP__UNK $(mktemp __SP__UNK)'|||b''|||
+b'find . -type f \\( -name "*.c" -or -name "*.sh" \\)'|||b"find . -name '*.[ch]' | xargs -I {} grep -E 'expr' {}"|||b'find . -type f \\( -name "*.c" -or -name __SP__UNK \\)'|||
+b'echo -e $(echo -n -e __SP__UNK | wc -m)'|||b'echo -e $(echo -e __SP__UNK | wc -m)'|||b''|||
+b''|||b"finger | cut -d ' ' -f 1 | sort | uniq | wc -l"|||b"finger | cut -d ' ' -f 1 | rev | cut -d ' ' -f 1 | sort | uniq | wc -l"|||
+b'$(date -u -d __SP__UNK)'|||b'$(date -d __SP__UNK)'|||b''|||
+b'echo -e __SP__UNK | tr -d __SP__UNK'|||b''|||b'echo -n -e __SP__UNK | tr -d __SP__UNK'|||
+b''|||b"ps -e -f | grep ssh | cut -d ' ' -f 1 | grep -E -o __SP__UNK | head -n 1"|||b"ps -e -f | grep ssh | cut -d ' ' -f 1 | xargs -I {} tar -c -v -f __SP__UNK {}"|||
+b''|||b'find . -type l -exec ls -l {} \\; | tail -n __SP__UNK | head -n __SP__UNK | head -n __SP__UNK'|||b'find . -type l -exec ls -l {} \\; | tail -n __SP__UNK | head -n __SP__UNK | head -n 1'|||
+b''|||b"ps -e -f | grep -v __SP__UNK | tr -s ' ' | tr ' ' '\\n' | grep -E -o __SP__UNK | tr -d"|||b''|||
+b''|||b''|||b''|||
+b''|||b''|||b''|||
+b''|||b'find . -type f -name __SP__UNK -exec cat {} \\; | xargs -I {} tar -c -v -f __SP__UNK {}'|||b'find . -type f \\( -name __SP__UNK -or -name __SP__UNK \\) -print0 | xargs -0 -I {} chmod __SP__UNK {}'|||
+b''|||b'find . -type f -exec ls -s {} \\; | tr -c -d __SP__UNK | xargs -0 -I {} echo {}'|||b'find . -type f -exec ls -s {} \\; | tr , __SP__UNK | xargs -0 -I {} grep -E __SP__UNK {}'|||
+b''|||b''|||b''|||
+b''|||b'find __SP__UNK -type d -name __SP__UNK -exec echo __SP__UNK \\; | xargs -I {} grep __SP__UNK {}'|||b'find __SP__UNK -type d -name __SP__UNK -exec echo __SP__UNK \\; | xargs -I {} tar -c -v -f __SP__UNK {}'|||
+b''|||b'find . -type f -name __SP__UNK | xargs -I {} grep __SP__UNK {}'|||b'find . -type f -name __SP__UNK | xargs -I {} tar -c -v -f __SP__UNK {}'|||
+b'date -d __SP__UNK'|||b'date --date=__SP__UNK __SP__UNK'|||b'date --date=__SP__UNK | tr __SP__UNK __SP__UNK'|||
+b''|||b'date -d __SP__UNK __SP__UNK'|||b"date --date=__SP__UNK __SP__UNK | cut -d ' ' -f 1 | cut -d ' ' -f 1"|||
+b'hostname -f'|||b"hostname | cut -d / -f 1 | cut -d / -f 1 | cut -d ' ' -f 1"|||b'hostname | cut -d / -f 1 | cut -d / -f 1 | cut -f 1 -d " "'|||
+b''|||b'cat /dev/urandom | tr -d -c __SP__UNK | fold -w __SP__UNK | head - __SP__UNK'|||b'cat /dev/urandom | tr -d -c __SP__UNK | grep -E -o __SP__UNK | tr -d __SP__UNK'|||
+b''|||b'find . -type f -name __SP__UNK | xargs -I {} ls -l {}'|||b'find . -type f -name __SP__UNK -exec ls -a -l {} \\; | sort -n -r | head - 1'|||
+b''|||b'find . -type f -newermt __SP__UNK ! -newermt __SP__UNK -exec ls -l {} \\;'|||b'find . -type f -mtime 0 -exec ls -l {} \\;'|||
+b''|||b'find __SP__UNK -type f -exec grep __SP__UNK {} /dev/null \\;'|||b'zcat __SP__UNK | grep __SP__UNK'|||
+b'find /dir -regex __SP__UNK'|||b'find /dir | grep -E __SP__UNK'|||b'find /dir -name __SP__UNK'|||
+b'find /usr -type f -inum __SP__UNK -delete'|||b'find /usr -type f -inum __SP__UNK -exec echo {} \\;'|||b'find /usr -type f -inum __SP__UNK -exec ls {} \\;'|||
+b'find . -name "*.jpg"'|||b'find . -iname "*.jpg"'|||b'find . -name "*.jpg" | xargs -I {} grep __SP__UNK {}'|||
+b'find . -type f -perm __SP__UNK'|||b'find . -perm -111 -type f'|||b'find . -type f \\( -perm __SP__UNK -or -perm __SP__UNK \\)'|||
+b'find . type -f -ctime -2'|||b'find . type -f -ctime 2'|||b'find . type -f -ctime +2'|||
+b'find . type -f -mtime 2'|||b'find . type -f -mtime -2'|||b'find . -type f -daystart -mtime 2'|||
+b'find . -type f -name __SP__UNK'|||b'find . -type f \\( -name __SP__UNK -or -name __SP__UNK \\)'|||b'find . -type f \\( -name __SP__UNK -or -name __SP__UNK \\) -print'|||
+b'find . -name __SP__UNK'|||b'find . -name __SP__UNK -print'|||b'find . -name __SP__UNK -exec grep __SP__UNK {} \\; -print'|||
+b'find . -name __SP__UNK -or -name __SP__UNK'|||b'find . -name __SP__UNK -type f'|||b'find . -type f \\( -name __SP__UNK -or -name __SP__UNK -or -name __SP__UNK \\) -print'|||
+b'find . -name "*bash*" | xargs'|||b"find . -iname '*test*' -exec grep -i -l __SP__UNK {} \\;"|||b"find . -iname '*test*' -exec grep -i -l foo {} \\;"|||
+b'find . type -f -ctime +2'|||b'find . type -f -ctime 1 -type f'|||b'find . -type f -ctime +2'|||
+b'find . -type f -ctime $FTIME'|||b'find ./ -type f -ctime $FTIME'|||b'find . type -f -ctime 1 -type f'|||
+b'find . -name __SP__UNK -type f'|||b'find . -type f -name __SP__UNK'|||b'find . -type f -regex __SP__UNK'|||
+b"find . -lname '*test*'"|||b'find . -lname __SP__UNK'|||b'find ./ -lname __SP__UNK'|||
+b'find __SP__UNK -type f'|||b'find __SP__UNK -type f -print'|||b'find __SP__UNK -type f -exec find {} -type f \\;'|||
+b"find __SP__UNK -name '*.txt'"|||b"find __SP__UNK -type f -name '*.txt'"|||b'find __SP__UNK -type f -name "*.txt"'|||
+b'find /tmp -type f -name __SP__UNK'|||b'find /tmp -type f ! -perm __SP__UNK'|||b'find /tmp -type f | xargs -I {} grep __SP__UNK {}'|||
+b''|||b'find / -name __SP__UNK -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||b'find / -name __SP__UNK -print0 | xargs -0 -I {} tar -c -z -v -f __SP__UNK {}'|||
+b'find . -exec grep foo {} +'|||b'find . -exec grep foo {} \\;'|||b'find . -name foo | xargs -I {} grep foo {}'|||
+b'find . -name __SP__UNK -exec grep __SP__UNK {} \\; -print'|||b'find . -name __SP__UNK | xargs -I {} grep __SP__UNK {}'|||b"find . -name '*.[ch]' | xargs -I {} grep __SP__UNK {}"|||
+b''|||b''|||b''|||
+b'find . -type f -exec grep __SP__UNK {} \\; -print'|||b'find . -type f -exec grep __SP__UNK {} \\;'|||b'find . -type f -exec grep -l __SP__UNK {} \\;'|||
+b'find / -size +100M -exec rm -r -f {} \\;'|||b'find / -type f -size +1000 -name "*.log" -exec rm {} \\;'|||b"find / \\( -newer ttt -or -name 'core' \\) -exec rm {} \\;"|||
+b'find . -name file -prune -or -name file -print'|||b'find . -name file -okdir file {} \\;'|||b'find . -name file | xargs -I {} grep __SP__UNK {}'|||
+b"find . -name '*.c'"|||b"find . -name '*.c' | xargs -I {} grep __SP__UNK {}"|||b'find . -name "*.c"'|||
+b'find . -maxdepth 1 -type d'|||b"find . -maxdepth 1 -type d | xargs -I {} grep -F 'example' {}"|||b'find . -maxdepth 1 -mindepth 1 -type d'|||
+b'find . -inum __SP__UNK'|||b'find . -inum __SP__UNK -exec grep -i __SP__UNK {} \\;'|||b'find ./ -inum __SP__UNK'|||
+b''|||b'find . -type f -exec grep -l __SP__UNK {} \\;'|||b'find . -type f -print0 | xargs -0 -I {} grep -l -i __SP__UNK {}'|||
+b''|||b'find / -iname "*.mp3" -type f -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||b'find / -iname "*.mp3" -type f | xargs -I {} tar -c -v -f __SP__UNK {}'|||
+b''|||b'~ | grep __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK'|||b'find / -path /proc -prune -or -name myfile -type f -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||
+b'find / -type d -name __SP__UNK'|||b'find / -type d -iname __SP__UNK'|||b'find / -type d | xargs -I {} grep __SP__UNK {}'|||
+b'find / -name __SP__UNK'|||b'find . -name __SP__UNK'|||b'find __SP__UNK -name __SP__UNK'|||
+b'find __SP__UNK -name __SP__UNK'|||b'find __SP__UNK -iname __SP__UNK'|||b'find /usr/share/doc -name __SP__UNK'|||
+b'find ~ -name __SP__UNK'|||b'find ~ -iname __SP__UNK'|||b'find $HOME -iname filename.txt'|||
+b'find . -perm __SP__UNK'|||b'find / -perm __SP__UNK'|||b'find . -perm /222'|||
+b'find __SP__UNK -iname __SP__UNK'|||b'find / -iname __SP__UNK'|||b'find ~ -iname __SP__UNK'|||
+b'find __SP__UNK -iname __SP__UNK -exec tar -c -v -f __SP__UNK {} \\;'|||b'tar -c __SP__UNK | tar -x -f -'|||b'find __SP__UNK -iname __SP__UNK -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}'|||
+b'find . -name __SP__UNK'|||b'find / -path __SP__UNK -prune -or -name myfile -type f -print'|||b'find / -path /proc -prune -or -name myfile -type f -print'|||
+b'find /usr -iname __SP__UNK'|||b'find /usr -name __SP__UNK'|||b'find /usr \\( -name __SP__UNK -or -name __SP__UNK \\)'|||
+b'find __SP__UNK -name __SP__UNK -print0 | xargs -0 -I {} rmdir {}'|||b'find __SP__UNK -type d -name __SP__UNK -print0 | xargs -0 -I {} rmdir {}'|||b'find __SP__UNK -type d -name __SP__UNK -exec rmdir {} \\;'|||
+b'zcat __SP__UNK | grep __SP__UNK'|||b'tac __SP__UNK | grep __SP__UNK'|||b'grep __SP__UNK $(cat __SP__UNK)'|||
+b'find . -name "*.pl" | xargs -I {} grep __SP__UNK {}'|||b'find . -name "*.pl"'|||b'find . -name "*.pl" -exec grep -l __SP__UNK {} \\;'|||
+b'find / -type f -exec grep __SP__UNK {} \\;'|||b'find / -type f | xargs -I {} grep __SP__UNK {}'|||b'find / -type f -exec grep __SP__UNK {} /dev/null \\;'|||
+b'find $DIR -type f -exec grep __SP__UNK {} \\;'|||b'find $DIR -type f -exec grep __SP__UNK {} \\; -print'|||b'find $DIR -type f -print0 | xargs -0 -I {} grep __SP__UNK {}'|||
+b'find . -path __SP__UNK -prune -or -type f ! -path __SP__UNK'|||b'find . -path __SP__UNK -prune -or -type f ! -name __SP__UNK'|||b'find . -path __SP__UNK -prune -or -type f ! -path __SP__UNK -print'|||
+b'find . -name "*.txt" -exec ls -a -l {} \\;'|||b'find . -name ".txt" | xargs -I {} grep __SP__UNK {}'|||b'find . -name "*.txt" -exec rm {} \\;'|||
+b'find __SP__UNK -name "*.txt"'|||b'find __SP__UNK -name "*.txt" -print'|||b'find __SP__UNK -name "*.txt" | xargs -I {} grep __SP__UNK {}'|||
+b''|||b"find __SP__UNK -path __SP__UNK -prune -or -name '*.txt' -print0 | xargs -0 -I {} tar -c -v -f __SP__UNK {}"|||b''|||
+b'find $HOME -mtime +365'|||b'find ~ -type f -mtime -2 ! -newer __SP__UNK'|||b'find ~ -type f -mtime __SP__UNK -not -newer __SP__UNK'|||
+b'find . -name __SP__UNK -print'|||b'find . \\( -name __SP__UNK -or -name __SP__UNK \\) -print'|||b'find . \\( -name __SP__UNK -or -name __SP__UNK \\) -prune -or -name __SP__UNK -print'|||
+b'find . -size 10 __SP__UNK'|||b'find . -size __SP__UNK -size __SP__UNK -print'|||b'find . -size +10M -size -50M -print'|||
+b'find / -xdev -size __SP__UNK'|||b'find / -xdev -type f -print | xargs -I {} grep -l -i __SP__UNK {}'|||b'find / -xdev -type f -print'|||
+b'find __SP__UNK -name "*.txt" | xargs -I {} grep __SP__UNK {}'|||b'find __SP__UNK -name __SP__UNK | xargs -I {} grep __SP__UNK {}'|||b"find __SP__UNK -name '*.txt' | xargs -I {} grep __SP__UNK {}"|||
+b"find . -type f -print0 | xargs -0 -I {} grep -F 'example' {}"|||b'find . -type f -exec grep __SP__UNK {} \\;'|||b"find . -type f -print0 | xargs -r -0 -I {} grep -F 'example' {}"|||
+b'find . -type f -exec grep __SP__UNK {} \\;'|||b'find . -type f -exec grep string {} \\;'|||b'find . -type f -print0 | xargs -0 -I {} grep "foo" {}'|||
+b'find / -user __SP__UNK'|||b'find / -user __SP__UNK -print'|||b'find / -user www -print'|||
+b'find ~ -name __SP__UNK'|||b'find __SP__UNK -name __SP__UNK'|||b'find $HOME -name __SP__UNK'|||
+b'find . -perm __SP__UNK -exec ls -l {} \\;'|||b'find / -nogroup -print | xargs -I {} ls -l {}'|||b'find / -perm __SP__UNK'|||
+b'dig +short __SP__UNK __SP__UNK'|||b"dig -x __SP__UNK | grep PTR | cut -d ' ' -f 1 | rev"|||b"ping -c 1 __SP__UNK | grep PTR | cut -d ' ' -f 1 | rev"|||
+b''|||b'top -c | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK'|||b'top -c | grep -v localhost | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK | grep -v __SP__UNK'|||
+b'find / -xdev -type f -print | xargs -I {} ls -l {}'|||b'find / -xdev -type f -print | xargs -I {} grep -l -i __SP__UNK {}'|||b'find / -xdev -type f -print | xargs -I {} grep -l __SP__UNK {}'|||
+b''|||b'find . -type f -exec ls -s {} \\; | sort -n | tail -n 10 | xargs -I {} echo {}'|||b'find . -type d -exec ls -s {} \\; | sort -n | tail -n __SP__UNK | xargs -I {} echo {}'|||
+b''|||b'find . -type d -exec ls -s {} \\; | sort -n | tail -n __SP__UNK | xargs -I {} ls -l {}'|||b'find . -type f -exec ls -s {} \\; | sort -n | tail -n __SP__UNK | xargs -I {} ls -l {}'|||
+b''|||b'~ | grep __SP__UNK | tail -n __SP__UNK | xargs -n 1 -I {} dirname {} | xargs -I {} echo {}'|||b'find . -type f -exec ls -s {} + | tail -n __SP__UNK | xargs -n 1 -I {} chmod __SP__UNK {}'|||
+b''|||b'find __SP__UNK -type f -exec chmod __SP__UNK {} \\;'|||b'find __SP__UNK -type f -perm __SP__UNK -exec chmod __SP__UNK {} \\;'|||
+b'ssh -L __SP__UNK -N -L __SP__UNK -N'|||b'ssh -L __SP__UNK -N'|||b'ssh -L __SP__UNK -N -L __SP__UNK __SP__UNK'|||
+b''|||b'echo __SP__UNK | rev | cut -d __SP__UNK -f 1 | rev'|||b'env | grep __SP__UNK'|||
+b'which gzip'|||b'echo __SP__UNK | xargs -I {} dirname {} | xargs -I {} dirname {} | xargs -I {} dirname {}'|||b'echo __SP__UNK | xargs -n 1 -I {} dirname {} | xargs -I {} dirname {} | xargs -I {} dirname {}'|||
+b''|||b'find __SP__UNK -type l -print0 | tr -d -c __SP__UNK | tar -x -z -f - -C /destination'|||b'find __SP__UNK -type l -print0 | xargs -0 -I {} tar -r -v -f __SP__UNK {}'|||
+b'find . -maxdepth 1 -type d ! -regex __SP__UNK'|||b'find . -mindepth 1 -maxdepth 1 -type d | xargs -I {} ls -l {}'|||b'find . -mindepth 1 -maxdepth 1 -type d | xargs -I {} ls -l -d {}'|||
+b'file *.php | grep __SP__UNK'|||b'find . -name __SP__UNK -exec basename {} \\; | xargs -I {} file {}'|||b'find . -name __SP__UNK -print0 | xargs -0 -I {} file {}'|||
+b'find / -mmin -60'|||b"find / -newerct '1 minute ago' -print"|||b'find / -mmin -1'|||
+b''|||b''|||b''|||
+b'pstree -p | grep __SP__UNK'|||b'pstree -s __SP__UNK'|||b'pstree -p'|||
+b''|||b"echo -n '' | grep -E -o __SP__UNK | grep -E -o __SP__UNK"|||b"echo -n '' | grep -E -o __SP__UNK | grep -v __SP__UNK"|||
+b''|||b'top -b -n 1 | grep __SP__UNK'|||b'top -b -n 1 | tail -n __SP__UNK | head -n 1'|||
+b'read -p __SP__UNK __SP__UNK'|||b'read -p __SP__UNK -n 1 -r'|||b'read -p __SP__UNK -r __SP__UNK'|||
+b'read -n 1 -r'|||b'read -r -n 1'|||b'read -n 1 c'|||
+b'read -r -p -d __SP__UNK __SP__UNK'|||b'read -r -d __SP__UNK __SP__UNK'|||b''|||
+b'sleep 500'|||b'find . -type f -exec ls -s {} \\; | sort -n -k 2 | head -n 1'|||b'find . -maxdepth 1 -type f -exec ls -s {} \\; | sort -n -k 2 | head -n 1'|||
+b''|||b'finger | cut -d , -f 1 | sort | uniq -c | sort -n'|||b''|||
+b'sort set1 set2 | uniq'|||b'sort file1 file2 | uniq -u'|||b''|||
+b'find . -mtime +2 | sort | uniq | xargs -I {} cat {}'|||b'find . -mtime +2 | xargs -I {} cat {} | sort -u'|||b'find . -mtime +2 | xargs -I {} cat {} | sort -r'|||
+b''|||b''|||b''|||
+b'split -l __SP__UNK __SP__UNK __SP__UNK'|||b'split -l __SP__UNK __SP__UNK'|||b'split __SP__UNK __SP__UNK'|||
+b'split -n 100 __SP__UNK'|||b'split -l 100 __SP__UNK'|||b'split -n 100000 __SP__UNK'|||
+b''|||b''|||b''|||
+b''|||b''|||b'watch -n 1 ls | grep -v __SP__UNK | tail -n __SP__UNK | tail -n __SP__UNK | xargs -I {} ls -l {}'|||
+b'cat __SP__UNK | xargs -I {} tar -c -v -f __SP__UNK {}'|||b'cat __SP__UNK | xargs -I {} tar -c -z -v -f __SP__UNK {}'|||b'cat __SP__UNK | xargs -I {} tar -c -v -z -f __SP__UNK {}'|||
+b''|||b''|||b''|||
+b''|||b"find . -type f -print0 | tr -d -c -d '\\n' | grep -E -o __SP__UNK | tr -d '\\n'"|||b"find . -type f -print0 | tr -d -c -d '\\n' | grep -E -o __SP__UNK | grep -E -o __SP__UNK"|||
+b''|||b"echo __SP__UNK | grep __SP__UNK | cut -d ' ' -f 2 | tail -n __SP__UNK | head -n __SP__UNK"|||b"echo __SP__UNK | rev | cut -d ' ' -f 2 | tail -n __SP__UNK | head -n __SP__UNK"|||
+b'env | grep __SP__UNK'|||b'env'|||b'echo __SP__UNK | xargs -I {} dirname {} | xargs -I {} dirname {} | xargs -I {} grep __SP__UNK {}'|||
+b'zcat __SP__UNK | tar -x'|||b'gunzip -c __SP__UNK | tar -x -v -f -'|||b'tar -c -f __SP__UNK __SP__UNK | tar -x -f -'|||
+b'find __SP__UNK -type f -exec chmod __SP__UNK {} \\;'|||b'chmod __SP__UNK $(find __SP__UNK -type f)'|||b'chmod 640 $(find __SP__UNK -type f)'|||
+b''|||b'find . -type f -print0 | xargs -0 -I {} touch {}'|||b'find . | grep -v __SP__UNK | xargs -I {} touch {}'|||
+b''|||b"echo __SP__UNK | grep __SP__UNK | cut -d ':' -f 1 | xargs -I {} grep __SP__UNK {}"|||b"echo __SP__UNK | grep -o __SP__UNK | cut -d ':' -f 1 | xargs -I {} grep __SP__UNK {}"|||
+b''|||b'find / \\( -name __SP__UNK -or -name __SP__UNK \\) -print0 | xargs -0 -I {} tar -r -v -f __SP__UNK {}'|||b'find / \\( -name __SP__UNK -or -name __SP__UNK \\) -print0 | xargs -0 -I {} cp {} __SP__UNK'|||
+b''|||b'find . | grep -v __SP__UNK | tail -n __SP__UNK | xargs -I {} cp -a --target-directory=__SP__UNK {}'|||b'find . -type f -exec ls -a -l {} \\; | tail - __SP__UNK | xargs -I {} mv -t __SP__UNK {}'|||
+b''|||b''|||b''|||
+b''|||b'watch -n 1 ls | tail -n __SP__UNK | xargs -n 1 -I {} dirname {} | tail -n 1'|||b'watch -n 1 ls | cat - __SP__UNK | tail -n __SP__UNK | split -d -l 1000000 - __SP__UNK'|||
+b''|||b"bash __SP__UNK | cut -d ' ' -f 1 | sort | uniq | xargs -I {} tar -c -v -f __SP__UNK {}"|||b'bash __SP__UNK | xargs -n 1 -I {} dirname {} | xargs -I {} tar -c -v -f __SP__UNK {}'|||
+b'chown root:root __SP__UNK'|||b'chown root __SP__UNK'|||b'chown root:root script.sh'|||
+b'mkdir -p __SP__UNK'|||b'mkdir -p $(dirname __SP__UNK)'|||b''|||
+b''|||b'echo __SP__UNK | tee __SP__UNK | tee -a __SP__UNK'|||b'gzip -d -c __SP__UNK | tee -a __SP__UNK | tee -a __SP__UNK'|||
+b'echo __SP__UNK | tee -a __SP__UNK'|||b'echo __SP__UNK | tee -a /etc/apt/sources.list'|||b'echo __SP__UNK | tee --append /etc/apt/sources.list'|||
+b''|||b''|||b''|||
+b''|||b''|||b''|||
+b''|||b''|||b''|||
+b''|||b''|||b''|||
+b'echo __SP__UNK | tee __SP__UNK'|||b'echo __SP__UNK | tee -a __SP__UNK'|||b'ls -l -R __SP__UNK | tee -a __SP__UNK'|||

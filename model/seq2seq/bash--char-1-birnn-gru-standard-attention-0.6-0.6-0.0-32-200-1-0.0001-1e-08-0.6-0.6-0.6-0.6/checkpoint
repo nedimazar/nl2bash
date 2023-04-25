@@ -1,0 +1,2 @@
+model_checkpoint_path: "/var/scratch/nar720/new/nl2bash/encoder_decoder/../model/seq2seq/bash--char-1-birnn-gru-standard-attention-0.6-0.6-0.0-32-200-1-0.0001-1e-08-0.6-0.6-0.6-0.6/translate.ckpt-0"
+all_model_checkpoint_paths: "/var/scratch/nar720/new/nl2bash/encoder_decoder/../model/seq2seq/bash--char-1-birnn-gru-standard-attention-0.6-0.6-0.0-32-200-1-0.0001-1e-08-0.6-0.6-0.6-0.6/translate.ckpt-0"

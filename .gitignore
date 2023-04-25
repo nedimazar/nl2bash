@@ -1,7 +1,7 @@
 # Google Drive
 /.tmp.drivedownload
 /.tmp.driveupload
-
+/venv
 # LaTeX junk
 *.aux
 *.log
@@ -33,9 +33,6 @@
 # auto-generated files
 parsetab.py
 /man-parser/out
-
-# Shell scripts
-*.sh
 
 # Database file
 *.db
